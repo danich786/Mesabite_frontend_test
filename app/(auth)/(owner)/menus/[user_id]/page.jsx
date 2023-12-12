@@ -22,11 +22,14 @@ import {
 
 import "./page.css";
 
-const getFolders = async () => {
+const getFolders = async (user_id) => {
   try {
-    const res = await fetch(process.env.NEXT_PUBLIC_HOST + "/menus/folders", {
-      cache: "no-store",
-    });
+    const res = await fetch(
+      process.env.NEXT_PUBLIC_HOST + "/menus/folders/" + user_id,
+      {
+        cache: "no-store",
+      }
+    );
 
     if (!res.ok) {
       throw new Error("Error while fetching category folders from the backend");
@@ -37,10 +40,10 @@ const getFolders = async () => {
   }
 };
 
-const getMenuCategories = async () => {
+const getMenuCategories = async (user_id) => {
   try {
     const res = await fetch(
-      process.env.NEXT_PUBLIC_HOST + "/menus/menu_categories",
+      process.env.NEXT_PUBLIC_HOST + "/menus/menu_categories/" + user_id,
       {
         cache: "no-store",
       }
@@ -55,9 +58,9 @@ const getMenuCategories = async () => {
   }
 };
 
-const Menus = async () => {
-  const folders = await getFolders();
-  const menu_categories = await getMenuCategories();
+const Menus = async ({ params }) => {
+  const folders = await getFolders(params.user_id);
+  const menu_categories = await getMenuCategories(params.user_id);
 
   return (
     <div className="main-body">

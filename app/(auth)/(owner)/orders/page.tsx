@@ -2,6 +2,7 @@
 
 import React from "react";
 import "./orders.css";
+import { useRetrieveUserQuery } from "@/redux/features/authApiSlice";
 
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 
@@ -40,6 +41,8 @@ function a11yProps(index: number) {
 
 const Orders = () => {
   const [isClient, setIsClient] = React.useState(false);
+  const { data: user } = useRetrieveUserQuery();
+  // console.log(user);
 
   React.useEffect(() => {
     setIsClient(true);
