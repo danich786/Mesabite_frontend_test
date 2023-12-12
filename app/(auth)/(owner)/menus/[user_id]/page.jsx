@@ -150,7 +150,7 @@ const Menus = async ({ params }) => {
                           }}
                         >
                           <Link
-                            href={`menus/menu_category/${menu_category.name}/${menu_category.id}`}
+                            href={`menus/${params.user_id}/menu_category/${menu_category.name}/${menu_category.id}`}
                           >
                             {menu_category.name}
                           </Link>
