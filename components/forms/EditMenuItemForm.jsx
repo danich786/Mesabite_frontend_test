@@ -106,11 +106,7 @@ export default function EditMenuItemForm(props) {
       <div className="text-top">
         <Link href="/menus">Menu</Link>
         <ChevronRightIcon />
-        <Link
-          href={`/menus/menu_category/${props.menu_cat_name}/${props.menu_cat}`}
-        >
-          {props.menu_cat_name}
-        </Link>
+        <Link href="../">{props.menu_cat_name}</Link>
         <ChevronRightIcon /> Edit {props.name}
       </div>
 

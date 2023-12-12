@@ -13,7 +13,7 @@ import { useRouter } from "next/navigation";
 import Swal from "sweetalert2";
 import { CancelButton, SaveButton } from "@/components/utils/CustomButtons";
 
-export default function CreateCategoryFolder() {
+export default function CreateCategoryFolder({ params }) {
   const router = useRouter();
 
   const defaultValues = {
@@ -28,10 +28,11 @@ export default function CreateCategoryFolder() {
   const onSubmit = (data) => {
     console.log(image);
     AxiosInstance.post("menus/create_category_folder/", {
+      user: params.user_id,
       name: data.name,
       image: image,
     }).then((res) => {
-      router.push("/menus");
+      router.push(`../${params.user_id}`);
       router.refresh();
       Swal.fire("success", "Menu folder has been created successfully.");
     });
@@ -98,7 +99,7 @@ export default function CreateCategoryFolder() {
         <div style={{ padding: "80px" }}></div>
 
         <Box sx={{ display: "flex", borderTop: "1px solid #c8c4bc" }}>
-          <CancelButton href="/menus" className="cancel-button">
+          <CancelButton href={`../${params.user_id}`} className="cancel-button">
             Cancel
           </CancelButton>
 

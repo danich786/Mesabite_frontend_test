@@ -82,7 +82,7 @@ const Menus = async ({ params }) => {
       <div className="create-folder">
         <AddCircleOutlineIcon sx={{ mr: 1, color: "#852e2b", ml: 1 }} />
         <Link
-          href="/menus/create_category_folder"
+          href={`/menus/${params.user_id}/create_category_folder`}
           style={{ textDecoration: "none" }}
         >
           <div style={{ fontSize: "18px", color: "#852e2b" }}>
@@ -150,7 +150,7 @@ const Menus = async ({ params }) => {
                           }}
                         >
                           <Link
-                            href={`menus/${params.user_id}/menu_category/${menu_category.name}/${menu_category.id}`}
+                            href={`${params.user_id}/menu_category/${menu_category.name}/${menu_category.id}`}
                           >
                             {menu_category.name}
                           </Link>
@@ -247,7 +247,7 @@ const Menus = async ({ params }) => {
 
       <div className="add-menu-category-box">
         <Link
-          href="/menus/add_menu_category"
+          href={`${params.user_id}/add_menu_category`}
           style={{ textDecoration: "none" }}
         >
           <AddCircleOutlineIcon className="add-menu-box-icon" />

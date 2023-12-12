@@ -49,7 +49,7 @@ export default async function MenuCategoryDetails({ params }) {
   return (
     <div className="main">
       <div className="text-top">
-        <Link href="/menus"> Menu </Link> <ChevronRightIcon /> {params.name}
+        <Link href="../../"> Menu </Link> <ChevronRightIcon /> {params.name}
       </div>
       <ItemButton className="menu-btn">{params.name}</ItemButton>
       <div className="cat-icons">

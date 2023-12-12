@@ -14,16 +14,18 @@ import "react-toastify/dist/ReactToastify.css";
 
 import { CancelButton, SaveButton } from "@/components/utils/CustomButtons";
 
-export default function AddMenuCategory() {
+export default function AddMenuCategory({ params }) {
   const router = useRouter();
 
   const [folders, setFolders] = useState([]);
 
   useEffect(() => {
     try {
-      axios.get(process.env.NEXT_PUBLIC_HOST + "/menus/folders").then((res) => {
-        setFolders(res.data);
-      });
+      axios
+        .get(process.env.NEXT_PUBLIC_HOST + "/menus/folders/" + params.user_id)
+        .then((res) => {
+          setFolders(res.data);
+        });
     } catch (error) {
       console.log(error);
     }
@@ -46,12 +48,13 @@ export default function AddMenuCategory() {
   const onSubmit = (data) => {
     console.log(catfolder);
     AxiosInstance.post("menus/add_menu_category/", {
+      user: params.user_id,
       name: name,
       description: description,
       image: image,
       folder: catfolder,
     }).then((res) => {
-      router.push("/menus");
+      router.push(`../${params.user_id}`);
       router.refresh();
       toast.success("Menu Category has been created successfully.");
     });
@@ -162,7 +165,7 @@ export default function AddMenuCategory() {
         ></textarea>
         <div style={{ padding: "40px" }}></div>
         <div style={{ display: "flex", borderTop: "1px solid #c8c4bc" }}>
-          <CancelButton className="cancel-button" href="../">
+          <CancelButton className="cancel-button" href={`../${params.user_id}`}>
             Cancel
           </CancelButton>
           <SaveButton type="submit" className="save-button">

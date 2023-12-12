@@ -72,7 +72,7 @@ export default function MenuCategoryDetails({ params }) {
       new_item: newitem,
       show_add_ons: show_add_ons,
     }).then((res) => {
-      router.push(`/menus/menu_category/${params.name}/${params.id}`);
+      router.push(`../${params.id}`);
       router.refresh();
       toast.success("Menu Item has been added successfully.");
     });
@@ -81,7 +81,7 @@ export default function MenuCategoryDetails({ params }) {
   return (
     <div className="main">
       <div className="text-top">
-        <Link href="/menus"> Menu </Link>
+        <Link href="../../../"> Menu </Link>
         <ChevronRightIcon />{" "}
         <Link href={`/menus/menu_category/${params.name}/${params.id}`}>
           {params.name}
