@@ -13,9 +13,12 @@ const DeleteMenuCategoryButton = (props) => {
     const confirmed = confirm("Are you sure to delete the Menu Category?");
 
     if (confirmed) {
-      const res = await fetch(url + "/menus/delete_menu_category/" + id, {
-        method: "DELETE",
-      });
+      const res = await fetch(
+        process.env.NEXT_PUBLIC_HOST + "/menus/delete_menu_category/" + id,
+        {
+          method: "DELETE",
+        }
+      );
       if (res.ok) {
         router.refresh();
       }
