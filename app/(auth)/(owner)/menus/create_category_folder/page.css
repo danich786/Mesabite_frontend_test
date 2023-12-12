@@ -1,0 +1,81 @@
+.main {
+  background-color: #fbf3db;
+  padding: 10px;
+  height: 100%;
+}
+
+.text-top {
+  font-size: 20px;
+  color: #8d3a36;
+  font-weight: bold;
+}
+
+.text-des {
+  padding-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.name-text {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #852e2b;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.name-input {
+  margin: 10px;
+  border: 2px solid #ba857a;
+  border-radius: 0.5rem;
+}
+
+.limit {
+  text-align: end;
+  color: #d2875f;
+  margin-right: 20px;
+}
+
+.image-text {
+  color: #852e2b;
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.image-box {
+  border: 3px solid #ba857a;
+  border-radius: 0.5rem;
+  margin: 8px;
+  margin-top: 12px;
+}
+
+.image-box-text {
+  font-size: 20px;
+  color: #86302d;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.cancel-button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10%;
+  margin-right: 8%;
+  width: 36%;
+  height: 50px;
+  background-color: #852e2b;
+  color: white;
+}
+
+.save-button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 10%;
+  width: 36%;
+  height: 50px;
+  background-color: #fecd00;
+  color: #852e2b;
+}

@@ -1,0 +1,81 @@
+.main {
+  border-top: 2px solid #852e2b;
+  padding: 20px;
+}
+
+.text-top {
+  margin-top: 15px;
+  color: #852e2b;
+}
+
+.menu-btn {
+  margin-top: 20px;
+  width: 100px;
+  height: 30px;
+  background-color: #fecd00;
+  color: #852e2b;
+  font-size: large;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+.cat-icons {
+  display: flex;
+  margin-top: 20px;
+}
+
+.menu-text {
+  font-size: 24px;
+  font-weight: 500;
+  color: #852e2b;
+  margin-right: 20px;
+}
+
+.cat-icon {
+  background-color: #852e2b !important;
+  color: white !important;
+}
+
+.assign {
+  margin-top: 20px;
+  width: 45%;
+  padding: 6px 24px 6px 24px;
+  color: #852e2b;
+  border: 2px solid #852e2b;
+  border-radius: 0.5rem;
+}
+
+.add-item {
+  margin-top: 20px;
+  padding: 20px;
+  color: #852e2b;
+  border: 2px solid #852e2b;
+  border-radius: 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.settings-menu-item-icon {
+  font-size: 28px;
+  background-color: #8d3a36;
+  border: 3px solid #8d3a36;
+  border-radius: 50%;
+  color: white;
+  margin-top: 8px;
+  margin-left: 16px;
+}
+
+.card-text {
+  margin-top: 20px;
+  color: #852e2b;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.card-price-text {
+  margin-top: 8px;
+  margin-left: 5px;
+  color: grey;
+  font-size: 14px;
+}

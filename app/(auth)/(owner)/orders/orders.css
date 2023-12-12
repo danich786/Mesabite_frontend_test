@@ -1,0 +1,50 @@
+.main-body {
+  padding-top: 20px;
+  background-color: #fbf3db;
+}
+
+.sales-box {
+  border: 3px solid #8d3a36;
+  border-radius: 0.5rem;
+  margin: 16px;
+  padding: 16px;
+}
+
+.sales-text {
+  font-size: 20px;
+  color: #9c534d;
+}
+
+.sales-value {
+  font-size: 48px;
+  color: #8d3a36;
+}
+
+.sales-overview {
+  color: gray;
+}
+
+.table {
+  width: 100%;
+  padding-top: 12px;
+}
+
+.t-body-row-1 {
+  width: 55%;
+  color: #9c534d;
+  font-weight: 300;
+}
+
+.t-body-row-2 {
+  width: 20%;
+  color: #9c534d;
+  font-weight: 300;
+}
+
+.t-body-row-3 {
+  width: 25%;
+  color: #9c534d;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,120 @@
+.main {
+  border-top: 2px solid #852e2b;
+  padding: 20px;
+}
+
+.item-settings-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #852e2b;
+}
+
+.status-text {
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #852e2b;
+}
+
+.status-des {
+  margin-top: 5px;
+  margin-left: 10px;
+  color: #9d6c5cfb;
+}
+
+.radio-div {
+  margin-top: 15px;
+  color: #9d605c;
+  padding-bottom: 30px;
+  border-bottom: 2px solid black;
+}
+
+.radio-btn {
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
+.time-text {
+  margin-top: 20px;
+  margin-left: 10px;
+  color: #852e2b;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.time-slots-container {
+  margin: 30px 0px 30px 10px;
+}
+
+.add-time-slot-container {
+  margin: -15px 0px 50px 10px;
+}
+
+.days-text {
+  margin-top: 10px;
+  color: #852e2b;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.button-group {
+  color: #852e2b;
+  margin-bottom: 30px;
+}
+
+.button-group .btn {
+  color: #852e2b;
+  border-color: #852e2b;
+  font-weight: 500;
+}
+
+.time-picker-from {
+  width: 45%;
+  color: #852e2b;
+}
+
+.time-picker-to {
+  margin-left: 5%;
+  width: 45%;
+  color: #852e2b;
+}
+
+.add-slot-btn {
+  margin-left: 10px;
+  color: #852e2b;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: none;
+  margin-bottom: 30px;
+}
+
+.btns-div {
+  /* position: absolute;
+  bottom: 0%; */
+  width: 90%;
+  display: flex;
+  border-top: 1px solid #c8c4bc;
+}
+
+.cancel-button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10%;
+  margin-right: 8%;
+  width: 36%;
+  height: 50px;
+  background-color: #852e2b;
+  color: white;
+}
+
+.save-button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 10%;
+  width: 36%;
+  height: 50px;
+  background-color: #fecd00;
+  color: #852e2b;
+}

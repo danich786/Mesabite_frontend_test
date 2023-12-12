@@ -1,0 +1,204 @@
+.main {
+  border-top: 2px solid #852e2b;
+  padding: 20px;
+}
+
+.text-top {
+  margin-top: 15px;
+  color: #852e2b;
+}
+
+.add-text {
+  margin-top: 20px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #852e2b;
+  text-transform: uppercase;
+}
+
+.detail-text {
+  margin-top: 20px;
+  margin-left: 20px;
+  color: #852e2b;
+  font-size: 24px;
+}
+
+.details {
+  margin-top: 10px;
+  margin-left: 25px;
+  color: #9d605c;
+}
+
+.image-text {
+  color: #852e2b;
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 25px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.image-box {
+  border: 3px solid #ba857a;
+  border-radius: 0.5rem;
+  margin: 10px 25px 20px 25px;
+}
+
+.image-box-text {
+  font-size: 20px;
+  color: #86302d;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.name-text {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #852e2b;
+  margin: 0px 25px 0px 25px;
+  font-weight: bold;
+}
+
+.name-input {
+  margin: 10px 25px 10px 25px;
+  width: 90%;
+  background-color: #fbf3db;
+  border: 2px solid #ba857a;
+  border-radius: 0.5rem;
+  padding: 8px;
+}
+
+.limit {
+  text-align: end;
+  color: #d2875f;
+  margin-right: 20px;
+}
+
+.des-text {
+  color: #852e2b;
+  text-align: left;
+  margin: 0px 25px 0px 25px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.des-box {
+  width: 90%;
+  border: 2px solid #ba857a;
+  border-radius: 0.5rem;
+  margin: 10px 25px 20px 25px;
+  background-color: #fbf3db;
+  padding: 12px;
+}
+
+.price-text {
+  color: #852e2b;
+  text-align: left;
+  margin-left: 25px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.price-input {
+  margin: 10px 25px 10px 25px;
+  width: 40%;
+  background-color: #fbf3db;
+  color: #852e2b;
+  border: 2px solid #ba857a;
+  border-radius: 0.5rem;
+  padding: 8px;
+  display: flex;
+}
+.price-input input {
+  width: 100%;
+  background-color: #fbf3db;
+  outline: none;
+  margin-left: 10px;
+}
+
+.checkbox {
+  margin: 30px 25px 10px 25px;
+}
+
+.checkbox-2 {
+  margin: 20px 25px 10px 25px;
+  padding-bottom: 30px;
+}
+
+.checkbox-label {
+  color: #852e2b;
+}
+
+.q-q {
+  margin: 0px 10px 0px 10px;
+  border-top: 2px solid #852e2b;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  border-bottom: 2px solid #852e2b;
+}
+
+.q-q-text {
+  margin-left: 10px;
+  font-size: 24px;
+  color: #852e2b;
+  font-weight: 400;
+}
+
+.q-q-des {
+  margin-left: 10px;
+  margin-top: 10px;
+  color: #9d605c;
+}
+
+.quantity-label {
+  margin-left: 10px;
+  margin-top: 20px;
+  color: #852e2b;
+  font-weight: 500;
+}
+
+.quantity-input {
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: #fbf3db;
+  border: 1px solid #852e2b;
+  border-radius: 0.5rem;
+  padding: 5px;
+}
+
+.add-allergy-icon {
+  margin-top: 20px;
+  margin-left: 10px;
+  color: #9d605c;
+}
+
+.d-i-text {
+  margin-top: 30px;
+  margin-left: 20px;
+  font-size: 24px;
+  color: #852e2b;
+  font-weight: 400;
+}
+
+.d-i-des {
+  margin-top: 10px;
+  margin-left: 20px;
+  color: #9d605c;
+}
+
+.btn-div {
+  margin-top: 50px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.save-button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10%;
+  margin-right: 8%;
+  width: 36%;
+  height: 50px;
+  background-color: #fecd00;
+  color: #852e2b;
+}
