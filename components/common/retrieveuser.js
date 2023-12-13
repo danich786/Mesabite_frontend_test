@@ -3,7 +3,9 @@
 import { useRetrieveUserQuery } from "@/redux/features/authApiSlice";
 
 export default function RetrieveUser() {
-  const { data: user } = useRetrieveUserQuery();
+  const { data: user, isLoading, isFetching } = useRetrieveUserQuery();
 
-  return user.id;
+  if (!isLoading && !isFetching) {
+    return user.id;
+  }
 }

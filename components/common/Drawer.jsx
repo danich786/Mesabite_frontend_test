@@ -33,7 +33,7 @@ import { logout as setLogout } from "@/redux/features/authSlice";
 import { useRouter } from "next/navigation";
 import { toast } from "react-toastify";
 
-// import retrieveuser from "./retrieveuser";
+import retrieveuser from "./retrieveuser";
 
 const drawerWidth = 240;
 
@@ -64,7 +64,7 @@ function ResponsiveDrawer(props) {
 
   const isSelected = (path) => (pathname === path ? true : false);
 
-  // const user_id = retrieveuser();
+  const user_id = retrieveuser();
 
   const drawer = (isMobile) => {
     return (
@@ -82,9 +82,9 @@ function ResponsiveDrawer(props) {
         </NavLink>
 
         <MenuNavLink
-          isSelected={isSelected(`/menus`)}
+          isSelected={isSelected(`/menus/${user_id}`)}
           isMobile={isMobile}
-          href={`/menus`}
+          href={`/menus/${user_id}`}
         >
           <RestaurantMenuIcon sx={{ pr: 1 }} />
           Menus
