@@ -165,6 +165,7 @@ export default function MenuCategoryDetails({ params }) {
             required
           />
         </div>
+
         <div className="checkbox">
           <label className="checkbox-label">
             <input

@@ -54,25 +54,25 @@ export default function MenuNavLink({
   const menuLinks = (isMobile: boolean) => (
     <>
       <MenuLink
-        isSelected={isSubSelected("/menus/categories")}
+        isSelected={isSubSelected(`${href}`)}
         isMobile={isMobile}
-        href="/menus/categories"
+        // href={"${href}"}
       >
         Categories
       </MenuLink>
 
       <MenuLink
-        isSelected={isSubSelected("/menus/adds_on")}
+        isSelected={isSubSelected(`${href}/adds_on`)}
         isMobile={isMobile}
-        href="/menus/adds_on"
+        href={`${href}/adds_on`}
       >
         Adds On
       </MenuLink>
 
       <MenuLink
-        isSelected={isSubSelected("/menus/availability")}
+        isSelected={isSubSelected(`${href}/availability`)}
         isMobile={isMobile}
-        href="/menus/availability"
+        href={`${href}/availability`}
       >
         Availability
       </MenuLink>

@@ -1,0 +1,112 @@
+@media screen and (max-width: 600px) {
+  .createGroupBtn {
+    margin: 20px 0 20px 0;
+    display: flex;
+    color: #852e2b;
+    font-weight: 600;
+    padding: 0%;
+  }
+
+  .sidebarDrawer {
+    width: 100%;
+    background-color: #fbf3db;
+  }
+
+  .sidebarMain {
+    margin: 20px;
+  }
+
+  .headerText {
+    font-size: 22px;
+    font-weight: 700;
+    color: #852e2b;
+    display: flex;
+  }
+
+  .sdHeading {
+    color: #852e2b;
+    margin: 10px 5px 5px 5px;
+    font-weight: 600;
+  }
+
+  .inputField {
+    border: 2px solid #852e2b;
+    border-radius: 0.5rem;
+    background-color: #fbf3db;
+    color: #852e2b;
+    margin: 0 5px 5px 5px;
+    width: 90%;
+    padding: 5px;
+  }
+
+  .inputField2 {
+    border: 2px solid #852e2b;
+    border-radius: 0.5rem;
+    background-color: #fbf3db;
+    color: #852e2b;
+    margin: 0 5px 5px 5px;
+    width: 50%;
+    padding: 5px;
+  }
+
+  .inputRes {
+    color: #852e2b;
+    text-align: right;
+    margin-right: 10%;
+    font-size: 12px;
+  }
+
+  .checkboxLabel {
+    color: #852e2b;
+    margin-left: 8px;
+  }
+
+  .divider {
+    background-color: #852e2b;
+    margin: 20px 0 20px 0;
+  }
+
+  .radioBtns {
+    color: #852e2b;
+    margin-left: 8px;
+    margin-top: 20px;
+    display: flex;
+  }
+
+  .btnGroup {
+    margin: 10px 10px 10px 10px;
+    width: 90%;
+    border: 1px solid grey;
+    border-radius: 1.5 rem;
+  }
+
+  .btn {
+    width: 50%;
+    background-color: #fbf3db;
+    color: gray;
+  }
+
+  .footerBtns {
+    display: flex;
+  }
+
+  .cancelBtn {
+    margin-bottom: 10px;
+    margin-left: 10%;
+    margin-right: 8%;
+    width: 36%;
+    height: 50px;
+    background-color: #852e2b;
+    color: white;
+  }
+
+  .saveBtn {
+    margin-bottom: 10px;
+    margin-left: 10%;
+    margin-right: 8%;
+    width: 36%;
+    height: 50px;
+    background-color: #fecd00;
+    color: #852e2b;
+  }
+}

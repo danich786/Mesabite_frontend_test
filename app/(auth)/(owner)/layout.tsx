@@ -9,7 +9,7 @@ export default function OwnerLayout({ children }: Props) {
   return (
     <RequireAuth>
       <Drawer />
-      <div style={{ backgroundColor: "#fbf3db" }}>{children}</div>
+      {children}
     </RequireAuth>
   );
 }

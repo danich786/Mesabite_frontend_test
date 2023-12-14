@@ -1,0 +1,47 @@
+@media screen and (max-width: 600px) {
+  .main {
+    border-top: 2px solid #852e2b;
+    padding: 20px;
+  }
+
+  .linkTop {
+    color: #852e2b;
+  }
+
+  .choicesIcon {
+    width: 120px;
+    background-color: #fbcb04;
+    padding: 6px 8px 4px 8px;
+    border-radius: 0.5rem;
+    color: #852e2b;
+    text-transform: uppercase;
+    margin: 20px 0 20px 0;
+    font-weight: 450;
+    display: flex;
+  }
+
+  .numberIcon {
+    font-size: 14px;
+    border-radius: 50%;
+    background-color: azure;
+    padding: 0 4px 0 4px;
+    margin: 0 0 4px 10px;
+  }
+
+  .groupName {
+    font-size: 24px;
+    font-weight: 600;
+    color: #852e2b;
+  }
+
+  .choiceList {
+    color: #852e2b;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    display: flex;
+  }
+
+  .listBtns {
+    margin-left: auto;
+  }
+}

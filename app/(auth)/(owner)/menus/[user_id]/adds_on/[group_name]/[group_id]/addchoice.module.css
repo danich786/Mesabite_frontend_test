@@ -1,0 +1,145 @@
+@media screen and (max-width: 600px) {
+  .createChoiceBtn {
+    margin: 20px 0 30px 0;
+    display: flex;
+    color: #852e2b;
+    font-weight: 600;
+    padding: 0%;
+  }
+
+  .sidebarDrawer {
+    width: 100%;
+    background-color: #fbf3db;
+  }
+
+  .sidebarMain {
+    margin: 20px;
+  }
+
+  .headerText {
+    font-size: 22px;
+    font-weight: 700;
+    color: #852e2b;
+    display: flex;
+  }
+
+  .sdHeading {
+    color: #852e2b;
+    margin: 10px 5px 5px 5px;
+    font-weight: 600;
+  }
+
+  .inputField {
+    border: 2px solid #852e2b;
+    border-radius: 0.5rem;
+    background-color: #fbf3db;
+    color: #852e2b;
+    margin: 0 5px 5px 5px;
+    width: 90%;
+    padding: 5px;
+  }
+
+  .inputRes {
+    color: #852e2b;
+    text-align: right;
+    margin-right: 10%;
+    font-size: 12px;
+  }
+
+  .inputField2 {
+    border: 2px solid #852e2b;
+    border-radius: 0.5rem;
+    background-color: #fbf3db;
+    color: #852e2b;
+    margin: 0 5px 5px 5px;
+    width: 50%;
+    padding: 5px;
+  }
+
+  .checkboxLabel {
+    color: #852e2b;
+    margin-left: 8px;
+    display: flex;
+    margin-bottom: 12px;
+  }
+
+  .checkboxLabel2 {
+    color: #852e2b;
+    margin-left: 8px;
+    margin-bottom: 12px;
+  }
+
+  .desBox {
+    width: 90%;
+    border: 2px solid #852e2b;
+    border-radius: 0.5rem;
+    margin: 10px 0 20px 10px;
+    background-color: #fbf3db;
+    padding: 12px;
+  }
+
+  .priceInput {
+    margin: 10px 0 30px 10px;
+    width: 40%;
+    background-color: #fbf3db;
+    color: #852e2b;
+    border: 2px solid #852e2b;
+    border-radius: 0.5rem;
+    padding: 8px;
+    display: flex;
+  }
+
+  .priceInput input {
+    width: 100%;
+    background-color: #fbf3db;
+    outline: none;
+    margin-left: 10px;
+  }
+
+  .sdHeading2 {
+    color: #852e2b;
+    margin: 10px 5px 5px 5px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .normalText {
+    color: #852e2b;
+    margin-left: 5px;
+    margin-bottom: 20px;
+  }
+
+  .allergyBtn {
+    color: #852e2b;
+    margin: 10px 0 30px 0;
+  }
+
+  .divider {
+    background-color: #852e2b;
+    margin: 20px 0 20px 0;
+  }
+
+  .footerBtns {
+    display: flex;
+  }
+
+  .cancelBtn {
+    margin-bottom: 10px;
+    margin-left: 10%;
+    margin-right: 8%;
+    width: 36%;
+    height: 50px;
+    background-color: #852e2b;
+    color: white;
+  }
+
+  .saveBtn {
+    margin-bottom: 10px;
+    margin-left: 10%;
+    margin-right: 8%;
+    width: 36%;
+    height: 50px;
+    background-color: #fecd00;
+    color: #852e2b;
+  }
+}

@@ -32,7 +32,6 @@ const getMenuItems = async (item_id) => {
         cache: "no-store",
       }
     );
-
     if (!res.ok) {
       throw new Error("Error while fetching menu items from the backend");
     }

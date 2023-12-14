@@ -1,0 +1,59 @@
+.main {
+  border-top: 2px solid #852e2b;
+  padding: 20px;
+}
+
+.textTop {
+  color: #852e2b;
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    border-top: 2px solid #852e2b;
+    padding: 20px;
+  }
+
+  .textTop {
+    color: #852e2b;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .addOnGroup {
+    border: 2px solid #852e2b;
+    border-radius: 0.5rem;
+    margin-bottom: 20px;
+  }
+
+  .groupHeaderContainer {
+    margin: 12px 8px 12px 8px;
+    display: flex;
+  }
+
+  .headerText {
+    font-size: 18px;
+    color: #852e2b;
+    font-weight: 600;
+  }
+
+  .headerBtns {
+    margin-left: auto;
+    display: flex;
+  }
+
+  .headerBtn {
+    padding: 4px 8px 4px 8px;
+    background-color: #fbcb04;
+    margin-right: 10px;
+    font-size: 12px;
+    border-radius: 1rem;
+  }
+
+  .addOnGroupBtns {
+    margin: 20px 8px 20px 8px;
+  }
+}
