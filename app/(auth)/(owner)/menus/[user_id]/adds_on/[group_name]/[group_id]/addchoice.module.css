@@ -110,6 +110,7 @@
   }
 
   .allergyBtn {
+    display: flex;
     color: #852e2b;
     margin: 10px 0 30px 0;
   }
@@ -121,6 +122,11 @@
 
   .footerBtns {
     display: flex;
+    background-color: #fbf3db;
+    position: sticky;
+    bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 10px;
   }
 
   .cancelBtn {

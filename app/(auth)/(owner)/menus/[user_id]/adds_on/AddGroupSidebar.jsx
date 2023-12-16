@@ -187,15 +187,19 @@ export default function RightSidebar(props) {
           </Button>
         </ButtonGroup>
 
-        <div className={styles.sdHeading}>Minimum Choices</div>
-        <input
-          className={styles.inputField2}
-          name="min_choices"
-          type="number"
-          value={min_choices}
-          min="0"
-          onChange={(e) => setminchoices(e.target.value)}
-        />
+        {required && (
+          <>
+            <div className={styles.sdHeading}>Minimum Choices</div>
+            <input
+              className={styles.inputField2}
+              name="min_choices"
+              type="number"
+              value={min_choices}
+              min="0"
+              onChange={(e) => setminchoices(e.target.value)}
+            />
+          </>
+        )}
 
         <div className={styles.sdHeading}>Maximum Choices</div>
         <input
@@ -222,15 +226,19 @@ export default function RightSidebar(props) {
           </label>
         </div>
 
-        <div className={styles.sdHeading}>Free Choices Number</div>
-        <input
-          className={styles.inputField2}
-          name="free_choices"
-          type="number"
-          value={free_choices}
-          min="0"
-          onChange={(e) => setfreechoices(e.target.value)}
-        />
+        {freechoice && (
+          <>
+            <div className={styles.sdHeading}>Free Choices Number</div>
+            <input
+              className={styles.inputField2}
+              name="free_choices"
+              type="number"
+              value={free_choices}
+              min="0"
+              onChange={(e) => setfreechoices(e.target.value)}
+            />
+          </>
+        )}
 
         <Divider className={styles.divider} />
 

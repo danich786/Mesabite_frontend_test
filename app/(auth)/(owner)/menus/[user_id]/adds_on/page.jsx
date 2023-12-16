@@ -6,7 +6,7 @@ import EditAddOnGroupBtn from "./EditAddOnGroupBtn";
 import SettingsAddsOnGroupBtn from "./SettingsAddsOnGroupBtn";
 import DeleteAddsOnGroupBtn from "./DeleteAddsOnGroupBtn";
 import DuplicateAddsOnGroupBtn from "./DuplicateAddsOnGroupBtn";
-import RightSidebar from "./RightSidebar";
+import RightSidebar from "./AddGroupSidebar";
 
 const get_AddOnsGroups = async (user_id) => {
   try {
