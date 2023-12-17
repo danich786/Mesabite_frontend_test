@@ -1,0 +1,83 @@
+@media screen and (max-width: 600px) {
+  .main {
+    border-top: 2px solid #852e2b;
+    padding: 20px;
+  }
+
+  .textTop {
+    color: #852e2b;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .inputField {
+    border: 2px solid #852e2b;
+    border-radius: 0.5rem;
+    background-color: #fbf3db;
+    text-align: center;
+    color: #852e2b;
+    width: 90%;
+    margin: 20px 5px 20px 5px;
+    padding: 8px;
+  }
+
+  .inputField::placeholder {
+    color: #852e2b;
+  }
+
+  .selectOption {
+    border: 1.5px solid #852e2b;
+    border-radius: 0.5rem;
+    color: #852e2b;
+    margin: 20px 5px 20px 5px;
+    padding: 20px 10px 20px 10px;
+  }
+
+  .typesText {
+    margin-bottom: 10px;
+  }
+
+  .optionBtn {
+    padding: 0;
+    color: #852e2b;
+    margin: 8px 0 8px 0;
+    font-weight: 500;
+  }
+
+  .itemsText {
+    color: #852e2b;
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 50px;
+  }
+
+  .des {
+    color: #852e2b;
+  }
+
+  .itemDiv {
+    margin-top: 15px;
+  }
+
+  .itemName {
+    color: #852e2b;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .itemCat {
+    color: #c6673a;
+    font-size: 14px;
+    margin: 5px 0 5px 0;
+    display: flex;
+  }
+
+  .btnGroup {
+    width: 100%;
+    border: 1.5px solid rgb(153, 153, 153);
+    border-radius: 1.5rem;
+    display: flex;
+    margin: 20px 0 10px 0;
+  }
+}
