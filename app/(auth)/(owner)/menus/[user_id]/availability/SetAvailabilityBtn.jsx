@@ -1,42 +1,73 @@
 import styles from "./page.module.css";
+
 import { useState } from "react";
 import Button from "@mui/material/Button";
 import { toast } from "react-toastify";
-import { useRouter } from "next/navigation";
 
 export default function SetAvailabilityBtn(props) {
-  const router = useRouter();
   const [availability, setAvailability] = useState(props.avail);
 
-  const changeAvailability = async (availability_cat) => {
-    setAvailability(availability_cat);
-
-    try {
-      const res = await fetch(
-        process.env.NEXT_PUBLIC_HOST +
-          "/menus/change_item_availability/" +
-          props.item_id,
-        {
-          method: "PUT",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ availability }),
-        }
-      );
-      if (!res.ok) {
-        toast.error("Failed. Please refresh and try again");
-      } else {
-        console.log("Availability Changed Successffully");
+  const changeAvailability_1 = async () => {
+    const res = await fetch(
+      process.env.NEXT_PUBLIC_HOST +
+        "/menus/change_item_availability/" +
+        props.item_id,
+      {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ availability: "A" }),
       }
-    } catch (error) {
-      toast.error("Failed. Please refresh and try again.");
+    );
+    if (!res.ok) {
+      toast.error("Failed. Please refresh and try again");
+    }
+  };
+
+  const changeAvailability_2 = async () => {
+    const res = await fetch(
+      process.env.NEXT_PUBLIC_HOST +
+        "/menus/change_item_availability/" +
+        props.item_id,
+      {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ availability: "S" }),
+      }
+    );
+    if (!res.ok) {
+      toast.error("Failed. Please refresh and try again");
+    }
+  };
+
+  const changeAvailability_3 = async () => {
+    const res = await fetch(
+      process.env.NEXT_PUBLIC_HOST +
+        "/menus/change_item_availability/" +
+        props.item_id,
+      {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ availability: "X" }),
+      }
+    );
+    if (!res.ok) {
+      toast.error("Failed. Please refresh and try again");
     }
   };
 
   return (
     <div className={styles.btnGroup}>
       <Button
+        onClick={() => {
+          setAvailability("A");
+          changeAvailability_1();
+        }}
         style={{
           backgroundColor: availability == "A" ? "#852e2b" : "#fbf3db",
           color: availability == "A" ? "white" : "grey",
@@ -46,11 +77,14 @@ export default function SetAvailabilityBtn(props) {
           paddingRight: "0px",
           paddingLeft: "0px",
         }}
-        onClick={() => changeAvailability("A")}
       >
         Available
       </Button>
       <Button
+        onClick={() => {
+          setAvailability("S");
+          changeAvailability_2();
+        }}
         style={{
           backgroundColor: availability == "S" ? "#852e2b" : "#fbf3db",
           color: availability == "S" ? "white" : "grey",
@@ -60,11 +94,14 @@ export default function SetAvailabilityBtn(props) {
           paddingRight: "0px",
           paddingLeft: "0px",
         }}
-        onClick={() => changeAvailability("S")}
       >
         Sold Out For Today
       </Button>
       <Button
+        onClick={() => {
+          setAvailability("X");
+          changeAvailability_3();
+        }}
         style={{
           backgroundColor: availability == "X" ? "#852e2b" : "#fbf3db",
           color: availability == "X" ? "white" : "grey",
@@ -74,7 +111,6 @@ export default function SetAvailabilityBtn(props) {
           paddingRight: "0px",
           paddingLeft: "0px",
         }}
-        onClick={() => changeAvailability("X")}
       >
         Sold Out Indefinitely
       </Button>

@@ -9,27 +9,29 @@ const Availability = ({ params }) => {
   const [item_to_search, setItemToSearch] = useState("");
   const [if_searched, setIfSearched] = useState(false);
   const [searched_items, setSearchItems] = useState(null);
+  const [if_error, setIfError] = useState(false);
 
   // form submit
   const submitSearch = async (e) => {
     e.preventDefault();
 
-    try {
-      const res = await fetch(
-        process.env.NEXT_PUBLIC_HOST +
-          "/menus/" +
-          params.user_id +
-          "/availability/" +
-          item_to_search,
-        {
-          cache: "no-store",
-        }
-      );
+    const res = await fetch(
+      process.env.NEXT_PUBLIC_HOST +
+        "/menus/" +
+        params.user_id +
+        "/availability/" +
+        item_to_search,
+      {
+        cache: "no-store",
+      }
+    );
+    if (res.ok) {
       setSearchItems(await res.json());
+      setIfError(false);
       setIfSearched(true);
-    } catch (error) {
+    } else {
       setIfSearched(false);
-      console.log("Search Error: ", error);
+      setIfError(true);
     }
   };
 
@@ -46,6 +48,12 @@ const Availability = ({ params }) => {
           onChange={(e) => setItemToSearch(e.target.value)}
         />
       </form>
+
+      {if_error && (
+        <>
+          <div className={styles.errorDiv}> No related item found.</div>
+        </>
+      )}
 
       {if_searched && (
         <>
