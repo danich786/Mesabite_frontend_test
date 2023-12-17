@@ -1,9 +1,38 @@
 import styles from "./page.module.css";
 import { useState } from "react";
 import Button from "@mui/material/Button";
+import { toast } from "react-toastify";
+import { useRouter } from "next/navigation";
 
 export default function SetAvailabilityBtn(props) {
+  const router = useRouter();
   const [availability, setAvailability] = useState(props.avail);
+
+  const changeAvailability = async (availability_cat) => {
+    setAvailability(availability_cat);
+
+    try {
+      const res = await fetch(
+        process.env.NEXT_PUBLIC_HOST +
+          "/menus/change_item_availability/" +
+          props.item_id,
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ availability }),
+        }
+      );
+      if (!res.ok) {
+        toast.error("Failed. Please refresh and try again");
+      } else {
+        console.log("Availability Changed Successffully");
+      }
+    } catch (error) {
+      toast.error("Failed. Please refresh and try again.");
+    }
+  };
 
   return (
     <div className={styles.btnGroup}>
@@ -17,7 +46,7 @@ export default function SetAvailabilityBtn(props) {
           paddingRight: "0px",
           paddingLeft: "0px",
         }}
-        onClick={() => setAvailability("A")}
+        onClick={() => changeAvailability("A")}
       >
         Available
       </Button>
@@ -31,7 +60,7 @@ export default function SetAvailabilityBtn(props) {
           paddingRight: "0px",
           paddingLeft: "0px",
         }}
-        onClick={() => setAvailability("S")}
+        onClick={() => changeAvailability("S")}
       >
         Sold Out For Today
       </Button>
@@ -45,7 +74,7 @@ export default function SetAvailabilityBtn(props) {
           paddingRight: "0px",
           paddingLeft: "0px",
         }}
-        onClick={() => setAvailability("X")}
+        onClick={() => changeAvailability("X")}
       >
         Sold Out Indefinitely
       </Button>

@@ -78,7 +78,10 @@ const Availability = ({ params }) => {
                 <div style={{ textTransform: "uppercase" }}>Category : </div>
                 <div>&nbsp; Tajin </div>
               </div>
-              <SetAvailabilityBtn avail={searched_item.availability} />
+              <SetAvailabilityBtn
+                item_id={searched_item.id}
+                avail={searched_item.availability}
+              />
             </div>
           );
         })}
