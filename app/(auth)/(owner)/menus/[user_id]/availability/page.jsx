@@ -5,7 +5,7 @@ import { useState } from "react";
 import Button from "@mui/material/Button";
 import SetAvailabilityBtn from "./SetAvailabilityBtn";
 
-const page = ({ params }) => {
+const Availability = ({ params }) => {
   const [item_to_search, setItemToSearch] = useState("");
   const [if_searched, setIfSearched] = useState(false);
   const [searched_items, setSearchItems] = useState(null);
@@ -52,13 +52,13 @@ const page = ({ params }) => {
           <div className={styles.selectOption}>
             <div className={styles.typesText}>All Types</div>
             <Button variant="text" className={styles.optionBtn}>
-              Mark all as 'Available'
+              Mark all as &apos;Available&apos;
             </Button>
             <Button variant="text" className={styles.optionBtn}>
-              Mark all as 'Sold Out For Today'
+              Mark all as &apos;Sold Out For Today&apos;
             </Button>
             <Button variant="text" className={styles.optionBtn}>
-              Mark all as 'Sold out Indefinitely'
+              Mark all as &apos;Sold out Indefinitely&apos;
             </Button>
           </div>
 
@@ -86,4 +86,4 @@ const page = ({ params }) => {
   );
 };
 
-export default page;
+export default Availability;
