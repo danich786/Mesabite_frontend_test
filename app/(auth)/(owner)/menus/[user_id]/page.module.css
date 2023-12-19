@@ -1,0 +1,130 @@
+@media screen and (max-width: 600px) {
+  .main {
+    border-top: 2px solid #852e2b;
+    padding: 20px;
+  }
+
+  .menuText {
+    text-align: left;
+    margin-left: 8px;
+    font-size: 24px;
+    color: #8d3a36;
+  }
+
+  .searchBox {
+    display: flex;
+    align-items: flex-end;
+    border: 2px solid #ba857a;
+    border-radius: 0.5rem;
+    margin: 8px;
+    height: 44px;
+  }
+
+  .searchIcon {
+    margin-left: 20%;
+    margin-right: 8px;
+    margin-bottom: 5px;
+    color: #9c534d;
+  }
+
+  .createFolder {
+    display: flex;
+    text-align: left;
+    margin-top: 12px;
+  }
+
+  .foodBox {
+    border: 3px solid #8d3a36;
+    border-radius: 0.5rem;
+    margin: 8px;
+  }
+
+  .foodBoxHeader {
+    display: flex;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .folderText {
+    font-size: 22px;
+    font-weight: bold;
+    color: #852e2b;
+    margin-top: 10px;
+    width: 50%;
+    text-align: left;
+  }
+
+  .menuBox {
+    position: relative;
+    height: 280px;
+    border: 2px solid #8d3a36;
+    border-radius: 0.5rem;
+    margin: 8px;
+    background-size: 100% 100%;
+  }
+
+  .boxFooter {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    background-color: rgba(80, 0, 0, 0.5);
+  }
+
+  .noFolder {
+    margin-top: 40px;
+  }
+
+  .noFolder .text {
+    text-align: left;
+    margin-left: 12px;
+    margin-bottom: 16px;
+    font-size: 20px;
+    color: #8d3a36;
+    font-weight: bold;
+  }
+
+  .menuBox2 {
+    position: relative;
+    height: 280px;
+    border: 2px solid #8d3a36;
+    border-radius: 0.5rem;
+    margin: 8px;
+    background-size: 100% 100%;
+  }
+
+  .menuCatFooter {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    background-color: rgba(80, 0, 0, 0.5);
+  }
+
+  .addMenuCategoryBox {
+    margin: 8px;
+    margin-top: 30px;
+    border: 3px solid #ba857a;
+    border-radius: 0.5rem;
+  }
+
+  .addMenuBoxIcon {
+    font-size: 60px;
+    color: #8d3a36;
+    margin: 30px;
+    margin-left: 42%;
+  }
+
+  .addMenuBoxText {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #86302d;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-bottom: 40px;
+    text-decoration: none;
+  }
+
+  .homeFooter {
+    padding: 160px;
+  }
+}

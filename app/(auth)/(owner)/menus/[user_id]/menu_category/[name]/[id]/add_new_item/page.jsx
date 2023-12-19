@@ -81,9 +81,17 @@ export default function MenuCategoryDetails({ params }) {
   return (
     <div className="main">
       <div className="text-top">
-        <Link href="../../../"> Menu </Link>
-        <ChevronRightIcon />{" "}
-        <Link href={`/menus/menu_category/${params.name}/${params.id}`}>
+        <Link
+          href="../../../"
+          style={{ textDecoration: "none", color: "#852e2b" }}
+        >
+          Menu
+        </Link>
+        <ChevronRightIcon />
+        <Link
+          href={`/menus/menu_category/${params.name}/${params.id}`}
+          style={{ textDecoration: "none", color: "#852e2b" }}
+        >
           {params.name}
         </Link>
         <ChevronRightIcon /> Add New Item

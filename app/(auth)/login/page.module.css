@@ -1,385 +1,387 @@
-.rectangle,
-.vectorIcon {
-  position: absolute;
-  left: 0;
-}
-.rectangle {
-  top: 64.6px;
-  background-color: #852e2c;
-  width: 390.4px;
-  height: 1.6px;
-}
-.vectorIcon {
-  top: 2px;
-  width: 151px;
-  height: 23px;
-}
-.imageIcon {
-  position: relative;
-  width: 24px;
-  height: 24px;
-  object-fit: cover;
-}
-.vectorIcon1 {
-  position: relative;
-  width: 13.1px;
-  height: 7.8px;
-}
-.imageParent {
-  position: absolute;
-  top: 0;
-  left: 307px;
-  width: 42px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.frame2 {
-  position: absolute;
-  top: 38px;
-  left: 19px;
-  width: 349px;
-  height: 25px;
-  overflow: hidden;
-}
-.frame1 {
-  top: 0;
-  background-color: #852e2c;
-  height: 87px;
-  overflow: hidden;
-}
-.frame1,
-.frame4,
-.frame5,
-.grd041Icon {
-  position: absolute;
-  left: 0;
-  width: 390px;
-}
-.frame5 {
-  top: 543px;
-  background-color: #852e2c;
-  height: 653px;
-  overflow: hidden;
-}
-.frame4,
-.grd041Icon {
-  top: 0;
-}
-.grd041Icon {
-  height: 566px;
-  object-fit: cover;
-}
-.frame4 {
-  height: 1196px;
-  overflow: hidden;
-}
-.fastSimpleAnd {
-  position: absolute;
-  top: 0;
-  left: 4px;
-  display: inline-block;
-  width: 276px;
-}
-.frame7 {
-  position: absolute;
-  top: 0;
-  left: 42px;
-  width: 280px;
-  height: 108px;
-  overflow: hidden;
-  font-family: Recoleta;
-}
-.manageYourBusiness {
-  position: absolute;
-  top: 0;
-  left: 4px;
-  display: inline-block;
-  width: 290px;
-}
-.frame8 {
-  position: absolute;
-  top: 126px;
-  left: 35px;
-  width: 294px;
-  height: 72px;
-  overflow: hidden;
-  font-size: 20px;
-}
-.frame10,
-.frame9,
-.termsOfUse {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.frame10,
-.frame9 {
-  top: 553px;
-  left: 132px;
-  width: 100px;
-  height: 11px;
-  overflow: hidden;
-  text-align: left;
-  font-size: 9px;
-}
-.frame10 {
-  top: 538px;
-  left: 127px;
-  width: 110px;
-  height: 12px;
-  font-size: 10px;
-}
-.immediateSignUp {
-  left: 0;
-  display: inline-block;
-  width: 115px;
-}
-.frame12,
-.hereToHelp,
-.immediateSignUp {
-  position: absolute;
-  top: 0;
-}
-.frame12 {
-  left: 0;
-  width: 364px;
-  height: 66px;
-  overflow: hidden;
-}
-.hereToHelp {
-  left: 232px;
-  display: inline-block;
-  width: 130px;
-}
-.customDesign,
-.frame14 {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.frame14 {
-  width: 362px;
-  height: 66px;
-  overflow: hidden;
-}
-.customDesign {
-  display: inline-block;
-  width: 88px;
-}
-.frame13,
-.frame15 {
-  position: absolute;
-  top: 0;
-  left: 129px;
-  width: 104px;
-  height: 66px;
-  overflow: hidden;
-}
-.frame13 {
-  left: 1px;
-  width: 362px;
-}
-.frame11,
-.tradeInWeeks {
-  position: absolute;
-  left: 0;
-}
-.frame11 {
-  top: 244px;
-  width: 364px;
-  height: 66px;
-  overflow: hidden;
-  font-size: 16px;
-  font-family: Recoleta;
-}
-.tradeInWeeks {
-  top: 0;
-  font-weight: 500;
-  display: inline-block;
-  width: 57px;
-}
-.frame17 {
-  position: absolute;
-  top: 6px;
-  left: 1px;
-  width: 308px;
-  height: 130px;
-  overflow: hidden;
-}
-.itsSomethingYou {
-  left: 0;
-  font-weight: 500;
-  display: inline-block;
-  width: 81px;
-}
-.frame19,
-.itsSomethingYou,
-.wereHereTo {
-  position: absolute;
-  top: 0;
-}
-.frame19 {
-  left: 109px;
-  width: 92px;
-  height: 156px;
-  overflow: hidden;
-}
-.wereHereTo {
-  left: 232px;
-  font-weight: 500;
-  display: inline-block;
-  width: 78px;
-}
-.frame20 {
-  position: absolute;
-  top: 3px;
-  left: 0;
-  width: 310px;
-  height: 130px;
-  overflow: hidden;
-}
-.frame18 {
-  top: 0;
-  left: 0;
-  width: 310px;
-  height: 156px;
-}
-.frame16,
-.frame18,
-.frame3,
-.frame6 {
-  position: absolute;
-  overflow: hidden;
-}
-.frame16 {
-  top: 328px;
-  left: 27px;
-  width: 310px;
-  height: 156px;
-  font-size: 11px;
-}
-.frame3,
-.frame6 {
-  top: 598px;
-  left: 13px;
-  width: 364px;
-  height: 564px;
-}
-.frame3 {
-  top: 87px;
-  left: 0;
-  width: 390px;
-  height: 1196px;
-}
-.signInTo,
-.stayAWhile {
-  position: absolute;
-  color: #fff6df;
-}
-.stayAWhile {
-  top: 35px;
-  left: 55px;
-  font-size: 35px;
-  font-family: Recoleta;
-}
-.signInTo {
-  top: 82px;
-  left: 92px;
-  font-size: 16px;
-}
-.emailParent,
-.passwordParent {
-  width: 290px;
-  border: 0;
-  background-color: transparent;
-  position: absolute;
-  top: 126px;
-  left: 40px;
-}
-.passwordParent {
-  top: 192px;
-}
-.forgotPassword {
-  text-decoration: underline;
-  position: absolute;
-  font-size: 16px;
-  top: 265px;
-  left: 220px;
-  font-weight: 500;
-  color: inherit;
-}
-.frameChild {
-  position: absolute;
-  top: 261px;
-  left: 42px;
-}
-.createAnAccount,
-.dontHaveAn {
-  position: absolute;
-  font-size: 16px;
-  top: 375px;
-  left: 40px;
-}
-.createAnAccount {
-  text-decoration: underline;
-  font-size: 16px;
-  left: 214px;
-  font-weight: 500;
-  color: inherit;
-}
-.login {
-  position: absolute;
-  top: calc(50% - 8.5px);
-  left: calc(50% - 21px);
-  font-size: 14px;
-  font-family: Montserrat;
-  color: #852e2c;
-  text-align: center;
-}
-.frame21,
-.frame22 {
-  position: absolute;
-  border-radius: 20px;
-  overflow: hidden;
-}
-.frame22 {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: #ffcd00;
-  top: 308px;
-  left: calc(50% - 145px);
-  box-shadow: 0 5px 5px rgba(236, 190, 0, 0.1);
-  width: 290px;
-  height: 45px;
-}
-.frame21 {
-  top: 154px;
-  left: 10px;
-  background-color: #852e2c;
-  width: 370px;
-  height: 419px;
-  text-align: left;
-  font-size: 12px;
-  color: #fffddf;
-}
-.frame {
-  position: relative;
-  background-color: #fff6df;
-  width: 100%;
-  height: 1283px;
-  overflow: hidden;
-  text-align: center;
-  font-size: 40px;
-  color: #fff6df;
-  font-family: Montserrat;
-}
+@media screen and (max-width: 600px) {
+  .rectangle,
+  .vectorIcon {
+    position: absolute;
+    left: 0;
+  }
+  .rectangle {
+    top: 64.6px;
+    background-color: #852e2c;
+    width: 390.4px;
+    height: 1.6px;
+  }
+  .vectorIcon {
+    top: 2px;
+    width: 151px;
+    height: 23px;
+  }
+  .imageIcon {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+  }
+  .vectorIcon1 {
+    position: relative;
+    width: 13.1px;
+    height: 7.8px;
+  }
+  .imageParent {
+    position: absolute;
+    top: 0;
+    left: 307px;
+    width: 42px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .frame2 {
+    position: absolute;
+    top: 38px;
+    left: 19px;
+    width: 349px;
+    height: 25px;
+    overflow: hidden;
+  }
+  .frame1 {
+    top: 0;
+    background-color: #852e2c;
+    height: 87px;
+    overflow: hidden;
+  }
+  .frame1,
+  .frame4,
+  .frame5,
+  .grd041Icon {
+    position: absolute;
+    left: 0;
+    width: 390px;
+  }
+  .frame5 {
+    top: 543px;
+    background-color: #852e2c;
+    height: 653px;
+    overflow: hidden;
+  }
+  .frame4,
+  .grd041Icon {
+    top: 0;
+  }
+  .grd041Icon {
+    height: 566px;
+    object-fit: cover;
+  }
+  .frame4 {
+    height: 1196px;
+    overflow: hidden;
+  }
+  .fastSimpleAnd {
+    position: absolute;
+    top: 0;
+    left: 4px;
+    display: inline-block;
+    width: 276px;
+  }
+  .frame7 {
+    position: absolute;
+    top: 0;
+    left: 42px;
+    width: 280px;
+    height: 108px;
+    overflow: hidden;
+    font-family: Recoleta;
+  }
+  .manageYourBusiness {
+    position: absolute;
+    top: 0;
+    left: 4px;
+    display: inline-block;
+    width: 290px;
+  }
+  .frame8 {
+    position: absolute;
+    top: 126px;
+    left: 35px;
+    width: 294px;
+    height: 72px;
+    overflow: hidden;
+    font-size: 20px;
+  }
+  .frame10,
+  .frame9,
+  .termsOfUse {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .frame10,
+  .frame9 {
+    top: 553px;
+    left: 132px;
+    width: 100px;
+    height: 11px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 9px;
+  }
+  .frame10 {
+    top: 538px;
+    left: 127px;
+    width: 110px;
+    height: 12px;
+    font-size: 10px;
+  }
+  .immediateSignUp {
+    left: 0;
+    display: inline-block;
+    width: 115px;
+  }
+  .frame12,
+  .hereToHelp,
+  .immediateSignUp {
+    position: absolute;
+    top: 0;
+  }
+  .frame12 {
+    left: 0;
+    width: 364px;
+    height: 66px;
+    overflow: hidden;
+  }
+  .hereToHelp {
+    left: 232px;
+    display: inline-block;
+    width: 130px;
+  }
+  .customDesign,
+  .frame14 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .frame14 {
+    width: 362px;
+    height: 66px;
+    overflow: hidden;
+  }
+  .customDesign {
+    display: inline-block;
+    width: 88px;
+  }
+  .frame13,
+  .frame15 {
+    position: absolute;
+    top: 0;
+    left: 129px;
+    width: 104px;
+    height: 66px;
+    overflow: hidden;
+  }
+  .frame13 {
+    left: 1px;
+    width: 362px;
+  }
+  .frame11,
+  .tradeInWeeks {
+    position: absolute;
+    left: 0;
+  }
+  .frame11 {
+    top: 244px;
+    width: 364px;
+    height: 66px;
+    overflow: hidden;
+    font-size: 16px;
+    font-family: Recoleta;
+  }
+  .tradeInWeeks {
+    top: 0;
+    font-weight: 500;
+    display: inline-block;
+    width: 57px;
+  }
+  .frame17 {
+    position: absolute;
+    top: 6px;
+    left: 1px;
+    width: 308px;
+    height: 130px;
+    overflow: hidden;
+  }
+  .itsSomethingYou {
+    left: 0;
+    font-weight: 500;
+    display: inline-block;
+    width: 81px;
+  }
+  .frame19,
+  .itsSomethingYou,
+  .wereHereTo {
+    position: absolute;
+    top: 0;
+  }
+  .frame19 {
+    left: 109px;
+    width: 92px;
+    height: 156px;
+    overflow: hidden;
+  }
+  .wereHereTo {
+    left: 232px;
+    font-weight: 500;
+    display: inline-block;
+    width: 78px;
+  }
+  .frame20 {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 310px;
+    height: 130px;
+    overflow: hidden;
+  }
+  .frame18 {
+    top: 0;
+    left: 0;
+    width: 310px;
+    height: 156px;
+  }
+  .frame16,
+  .frame18,
+  .frame3,
+  .frame6 {
+    position: absolute;
+    overflow: hidden;
+  }
+  .frame16 {
+    top: 328px;
+    left: 27px;
+    width: 310px;
+    height: 156px;
+    font-size: 11px;
+  }
+  .frame3,
+  .frame6 {
+    top: 598px;
+    left: 13px;
+    width: 364px;
+    height: 564px;
+  }
+  .frame3 {
+    top: 87px;
+    left: 0;
+    width: 390px;
+    height: 1196px;
+  }
+  .signInTo,
+  .stayAWhile {
+    position: absolute;
+    color: #fff6df;
+  }
+  .stayAWhile {
+    top: 35px;
+    left: 55px;
+    font-size: 35px;
+    font-family: Recoleta;
+  }
+  .signInTo {
+    top: 82px;
+    left: 92px;
+    font-size: 16px;
+  }
+  .emailParent,
+  .passwordParent {
+    width: 290px;
+    border: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 126px;
+    left: 40px;
+  }
+  .passwordParent {
+    top: 192px;
+  }
+  .forgotPassword {
+    text-decoration: underline;
+    position: absolute;
+    font-size: 16px;
+    top: 265px;
+    left: 220px;
+    font-weight: 500;
+    color: inherit;
+  }
+  .frameChild {
+    position: absolute;
+    top: 261px;
+    left: 42px;
+  }
+  .createAnAccount,
+  .dontHaveAn {
+    position: absolute;
+    font-size: 16px;
+    top: 375px;
+    left: 40px;
+  }
+  .createAnAccount {
+    text-decoration: underline;
+    font-size: 16px;
+    left: 214px;
+    font-weight: 500;
+    color: inherit;
+  }
+  .login {
+    position: absolute;
+    top: calc(50% - 8.5px);
+    left: calc(50% - 21px);
+    font-size: 14px;
+    font-family: Montserrat;
+    color: #852e2c;
+    text-align: center;
+  }
+  .frame21,
+  .frame22 {
+    position: absolute;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .frame22 {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: #ffcd00;
+    top: 308px;
+    left: calc(50% - 145px);
+    box-shadow: 0 5px 5px rgba(236, 190, 0, 0.1);
+    width: 290px;
+    height: 45px;
+  }
+  .frame21 {
+    top: 154px;
+    left: 10px;
+    background-color: #852e2c;
+    width: 370px;
+    height: 419px;
+    text-align: left;
+    font-size: 12px;
+    color: #fffddf;
+  }
+  .frame {
+    position: relative;
+    background-color: #fff6df;
+    width: 100%;
+    height: 1283px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 40px;
+    color: #fff6df;
+    font-family: Montserrat;
+  }
 
-.inputField {
-  width: 100%;
-  padding: 6px;
-  font-size: 18px;
-  color: #852e2c;
+  .inputField {
+    width: 100%;
+    padding: 6px;
+    font-size: 18px;
+    color: #852e2c;
+  }
 }

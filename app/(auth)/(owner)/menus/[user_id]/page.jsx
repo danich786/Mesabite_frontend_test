@@ -1,3 +1,5 @@
+import styles from "./page.module.css";
+
 import * as React from "react";
 import Link from "next/link";
 import TextField from "@mui/material/TextField";
@@ -19,8 +21,6 @@ import {
   EditMenuCategoryButton,
   DeleteMenuCategoryButton,
 } from "@/components/buttons/index";
-
-import "./page.css";
 
 const getFolders = async (user_id) => {
   try {
@@ -63,13 +63,13 @@ const Menus = async ({ params }) => {
   const menu_categories = await getMenuCategories(params.user_id);
 
   return (
-    <div className="main-body">
-      <div className="menu-text">
+    <div className={styles.main}>
+      <div className={styles.menuText}>
         <strong>YOUR MENU</strong>
       </div>
 
-      <div className="search-box">
-        <SearchIcon className="search-icon" />
+      <div className={styles.searchBox}>
+        <SearchIcon className={styles.searchIcon} />
         <TextField
           sx={{ mb: 0.2 }}
           variant="standard"
@@ -79,7 +79,7 @@ const Menus = async ({ params }) => {
         />
       </div>
 
-      <div className="create-folder">
+      <div className={styles.createFolder}>
         <AddCircleOutlineIcon sx={{ mr: 1, color: "#852e2b", ml: 1 }} />
         <Link
           href={`/menus/${params.user_id}/create_category_folder`}
@@ -92,10 +92,10 @@ const Menus = async ({ params }) => {
       </div>
 
       {folders.map((folder, index) => (
-        <div key={index} className="food-box">
-          <div className="header">
+        <div key={index} className={styles.foodBox}>
+          <div className={styles.foodBoxHeader}>
             <MenuIcon sx={{ ml: 1, mt: 2, mr: 2, color: "#8d3a36" }} />
-            <div className="folder-text"> {folder.name} </div>
+            <div className={styles.folderText}> {folder.name} </div>
             <div style={{ textAlign: "right" }}>
               <SettingsFolderButton />
               <EditFolderButton />
@@ -107,14 +107,14 @@ const Menus = async ({ params }) => {
               return (
                 <>
                   <div
-                    className="menu-box"
+                    className={styles.menuBox}
                     style={{
                       backgroundImage: `url(${
                         process.env.NEXT_PUBLIC_HOST + menu_category.image
                       })`,
                     }}
                   >
-                    <div className="menu-cat-footer">
+                    <div className={styles.boxFooter}>
                       <div style={{ display: "flex" }}>
                         <ItemButton
                           type="submit"
@@ -151,6 +151,7 @@ const Menus = async ({ params }) => {
                         >
                           <Link
                             href={`${params.user_id}/menu_category/${menu_category.name}/${menu_category.id}`}
+                            style={{ textDecoration: "none", color: "white" }}
                           >
                             {menu_category.name}
                           </Link>
@@ -179,17 +180,17 @@ const Menus = async ({ params }) => {
       {menu_categories.map((menu_category, index) => {
         if (menu_category.folder == null) {
           return (
-            <div key={index} className="no-folder">
-              <div className="text">Menu Categories</div>
+            <div key={index} className={styles.noFolder}>
+              <div className={styles.text}>Menu Categories</div>
               <div
-                className="menu-box"
+                className={styles.menuBox2}
                 style={{
                   backgroundImage: `url(${
                     process.env.NEXT_PUBLIC_HOST + menu_category.image
                   })`,
                 }}
               >
-                <div className="menu-cat-footer">
+                <div className={styles.menuCatFooter}>
                   <div style={{ display: "flex" }}>
                     <ItemButton
                       type="submit"
@@ -245,17 +246,19 @@ const Menus = async ({ params }) => {
         }
       })}
 
-      <div className="add-menu-category-box">
+      <div className={styles.addMenuCategoryBox}>
         <Link
           href={`${params.user_id}/add_menu_category`}
           style={{ textDecoration: "none" }}
         >
-          <AddCircleOutlineIcon className="add-menu-box-icon" />
-          <div className="add-menu-box-text">ADD NEW CATEGORY TO YOUR MENU</div>
+          <AddCircleOutlineIcon className={styles.addMenuBoxIcon} />
+          <div className={styles.addMenuBoxText}>
+            ADD NEW CATEGORY TO YOUR MENU
+          </div>
         </Link>
       </div>
 
-      <div className="home-footer"></div>
+      <div className={styles.homeFooter}></div>
     </div>
   );
 };

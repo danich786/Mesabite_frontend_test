@@ -34,15 +34,12 @@ import LogoutIcon from "@mui/icons-material/Logout";
 import { useAppSelector, useAppDispatch } from "@/redux/hooks";
 import { useLogoutMutation } from "@/redux/features/authApiSlice";
 import { logout as setLogout } from "@/redux/features/authSlice";
-import { useRouter } from "next/navigation";
-import { toast } from "react-toastify";
 
 import retrieveuser from "./retrieveuser";
 
 const drawerWidth = 240;
 
 function ResponsiveDrawer(props) {
-  const router = useRouter();
   const dispatch = useAppDispatch();
 
   const [logout] = useLogoutMutation();

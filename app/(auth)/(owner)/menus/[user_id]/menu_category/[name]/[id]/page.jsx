@@ -5,10 +5,8 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import AddCircleOutlineRoundedIcon from "@mui/icons-material/AddCircleOutlineRounded";
 import SettingsIcon from "@mui/icons-material/Settings";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
 
 import { ItemButton } from "@/components/utils/CustomButtons";
 import {
@@ -43,16 +41,23 @@ const getMenuItems = async (item_id) => {
 
 export default async function MenuCategoryDetails({ params }) {
   const menu_items = await getMenuItems(params.id);
+  const cat_name = params.name.replaceAll("%20", " ");
   // console.log(menu_items);
 
   return (
     <div className="main">
       <div className="text-top">
-        <Link href="../../"> Menu </Link> <ChevronRightIcon /> {params.name}
+        <Link
+          href="../../"
+          style={{ textDecoration: "none", color: "#852e2b" }}
+        >
+          Menu
+        </Link>
+        <ChevronRightIcon /> {cat_name}
       </div>
-      <ItemButton className="menu-btn">{params.name}</ItemButton>
+      <ItemButton className="menu-btn">{cat_name}</ItemButton>
       <div className="cat-icons">
-        <div className="menu-text">{params.name}</div>
+        <div className="menu-text">{cat_name}</div>
         <div>
           <Link href={`./${params.id}/settings`}>
             <SettingsMenuCategoryButton />
@@ -66,11 +71,14 @@ export default async function MenuCategoryDetails({ params }) {
         <AddCircleOutlineRoundedIcon /> Assign
       </div>
       <div className="add-item">
-        <Link href={`${params.id}/add_new_item`}>
+        <Link
+          href={`${params.id}/add_new_item`}
+          style={{ textDecoration: "none", color: "#852e2b" }}
+        >
           <AddCircleOutlineRoundedIcon
             style={{ fontSize: "40px", mr: "10px" }}
           />
-          Add New Item to {params.name}
+          Add New Item to {cat_name}
         </Link>
       </div>
 
