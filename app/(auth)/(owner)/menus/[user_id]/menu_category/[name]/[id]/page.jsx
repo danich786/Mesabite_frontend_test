@@ -59,9 +59,7 @@ export default async function MenuCategoryDetails({ params }) {
       <div className="cat-icons">
         <div className="menu-text">{cat_name}</div>
         <div>
-          <Link href={`./${params.id}/settings`}>
-            <SettingsMenuCategoryButton />
-          </Link>
+          <SettingsMenuCategoryButton />
           <EditMenuCategoryButton />
           <DeleteMenuCategoryButton />
           {/* folder={menu_category.id} */}
