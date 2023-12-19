@@ -13,7 +13,11 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 
 import { usePathname } from "next/navigation";
-import { NavLink, MenuNavLink } from "@/components/common";
+import {
+  DrawerLink,
+  DrawerMenuBtn,
+  DrawerInsightsBtn,
+} from "@/components/common";
 
 import ReceiptLongIcon from "@mui/icons-material/ReceiptLong";
 import RestaurantMenuIcon from "@mui/icons-material/RestaurantMenu";
@@ -72,74 +76,75 @@ function ResponsiveDrawer(props) {
         <Toolbar />
         <Divider />
 
-        <NavLink
+        <DrawerLink
           isSelected={isSelected("/orders")}
           isMobile={isMobile}
           href="/orders"
         >
           <ReceiptLongIcon sx={{ pr: 1 }} />
           Orders
-        </NavLink>
+        </DrawerLink>
 
-        <MenuNavLink
-          isSelected={isSelected(`/menus/${user_id}`)}
+        <DrawerMenuBtn
+          isSelected={isSelected("/")}
           isMobile={isMobile}
           href={`/menus/${user_id}`}
         >
           <RestaurantMenuIcon sx={{ pr: 1 }} />
           Menus
-          <KeyboardArrowDownIcon />
-        </MenuNavLink>
+          <KeyboardArrowDownIcon sx={{ marginLeft: "100px" }} />
+        </DrawerMenuBtn>
 
-        <NavLink
+        <DrawerInsightsBtn
           isSelected={isSelected("/reports")}
           isMobile={isMobile}
           href="/reports"
         >
           <AssessmentIcon sx={{ pr: 1 }} />
-          Reports
-        </NavLink>
+          Insights
+          <KeyboardArrowDownIcon sx={{ marginLeft: "90px" }} />
+        </DrawerInsightsBtn>
 
-        <NavLink
+        <DrawerLink
           isSelected={isSelected("/customers")}
           isMobile={isMobile}
           href="/customers"
         >
           <PeopleAltIcon sx={{ pr: 1 }} />
           Customers
-        </NavLink>
-        <NavLink
+        </DrawerLink>
+        <DrawerLink
           isSelected={isSelected("/marketing")}
           isMobile={isMobile}
           href="/marketing"
         >
           <StoreIcon sx={{ pr: 1 }} />
           Marketing
-        </NavLink>
-        <NavLink
+        </DrawerLink>
+        <DrawerLink
           isSelected={isSelected("/payments")}
           isMobile={isMobile}
           href="/payments"
         >
           <PaymentsIcon sx={{ pr: 1 }} />
           Payments
-        </NavLink>
-        <NavLink
+        </DrawerLink>
+        <DrawerLink
           isSelected={isSelected("/settings")}
           isMobile={isMobile}
           href="/settings"
         >
           <SettingsIcon sx={{ pr: 1 }} />
           Settings
-        </NavLink>
-        <NavLink
+        </DrawerLink>
+        <DrawerLink
           isSelected={isSelected("/support")}
           isMobile={isMobile}
           href="/support"
         >
           <HelpOutlineIcon sx={{ pr: 1 }} />
           Support
-        </NavLink>
+        </DrawerLink>
 
         <Divider
           style={{
@@ -149,19 +154,19 @@ function ResponsiveDrawer(props) {
           }}
         />
         {isAuthenticated ? (
-          <NavLink isMobile={isMobile} onClick={handleLogout}>
+          <DrawerLink isMobile={isMobile} onClick={handleLogout}>
             <LogoutIcon sx={{ pr: 1 }} />
             Logout
-          </NavLink>
+          </DrawerLink>
         ) : (
-          <NavLink
+          <DrawerLink
             isSelected={isSelected("/login")}
             isMobile={isMobile}
             href="/login"
           >
             <LoginIcon sx={{ pr: 1 }} />
             Login
-          </NavLink>
+          </DrawerLink>
         )}
       </div>
     );

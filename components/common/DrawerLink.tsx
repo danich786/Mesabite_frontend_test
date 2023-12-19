@@ -10,7 +10,7 @@ interface Props {
   [rest: string]: any;
 }
 
-export default function NavLink({
+export default function DrawerLink({
   isSelected,
   isMobile,
   isBanner,

@@ -1,12 +1,11 @@
 "use client";
 
 import "./menu.css";
-import Link from "next/link";
 import cn from "classnames";
 
 import { useState } from "react";
 import { usePathname } from "next/navigation";
-import { MenuLink } from "@/components/common";
+import { DrawerLink } from "@/components/common";
 
 interface Props {
   isSelected?: boolean;
@@ -17,7 +16,7 @@ interface Props {
   [rest: string]: any;
 }
 
-export default function MenuNavLink({
+export default function NavLink2({
   isSelected,
   isMobile,
   isBanner,
@@ -27,7 +26,7 @@ export default function MenuNavLink({
 }: Props) {
   const className = cn(
     rest.className,
-    "text-white rounded-md px-3 py-2 font-medium",
+    "text-white rounded-md px-3 py-1 font-medium",
     {
       "bg-gray-900": isSelected,
       "text-gray-300 hover:bg-gray-700 hover:text-white":
@@ -41,49 +40,41 @@ export default function MenuNavLink({
   const [open, setopen] = useState(false);
   const pathname = usePathname();
 
-  if (!href) {
-    return (
-      <span className={className} role="button" onClick={rest.onClick}>
-        {children}
-      </span>
-    );
-  }
-
   const isSubSelected = (path: string) => (pathname === path ? true : false);
 
   const menuLinks = (isMobile: boolean) => (
     <>
-      <MenuLink
+      <DrawerLink
         isSelected={isSubSelected(`${href}`)}
         isMobile={isMobile}
-        // href={"${href}"}
+        href={`${href}`}
       >
         Categories
-      </MenuLink>
+      </DrawerLink>
 
-      <MenuLink
+      <DrawerLink
         isSelected={isSubSelected(`${href}/adds_on`)}
         isMobile={isMobile}
         href={`${href}/adds_on`}
       >
         Adds On
-      </MenuLink>
+      </DrawerLink>
 
-      <MenuLink
+      <DrawerLink
         isSelected={isSubSelected(`${href}/availability`)}
         isMobile={isMobile}
         href={`${href}/availability`}
       >
         Availability
-      </MenuLink>
+      </DrawerLink>
     </>
   );
 
   return (
     <div className={open ? "menu-item-open" : "menu-item"}>
-      <Link className={className} href={href} onClick={() => setopen(!open)}>
+      <div className={className} onClick={() => setopen(!open)}>
         {children}
-      </Link>
+      </div>
       <div className="menu-subcat">{menuLinks(true)}</div>
     </div>
   );
