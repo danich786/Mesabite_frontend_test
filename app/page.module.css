@@ -1,0 +1,154 @@
+@media screen and (min-width: 1000px) {
+  .mobileView {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .desktopView {
+    display: none;
+  }
+
+  .vectorIcon {
+    position: relative;
+    width: 23.9px;
+    height: 23px;
+    object-fit: cover;
+  }
+  .startNow {
+    align-self: stretch;
+    position: relative;
+    font-size: 14px;
+    display: flex;
+    font-family: Montserrat;
+    color: #852e2c;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+    flex-shrink: 0;
+  }
+  .frameChild,
+  .item {
+    background-color: #ffcd00;
+  }
+  .item {
+    cursor: pointer;
+    border: 0;
+    padding: 2px 3px;
+    border-radius: 22px 15px 28px 27px;
+    width: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+  .frameChild {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+  }
+  .vectorIcon1 {
+    position: absolute;
+    top: 7px;
+    left: 5px;
+    width: 15px;
+    height: 10px;
+    object-fit: cover;
+  }
+  .ellipseParent {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    position: relative;
+    width: 24px;
+    height: 24px;
+  }
+  .header {
+    border-radius: 10000px;
+    background-color: #852e2c;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    margin: 10px 3% 10px 3%;
+    box-sizing: border-box;
+  }
+
+  .orderManagementSolution {
+    margin: 0;
+  }
+  .orderManagementSolutionContainer {
+    align-self: stretch;
+    position: relative;
+    letter-spacing: -0.72px;
+    line-height: 60px;
+    text-transform: uppercase;
+  }
+  .mesabitesIsAnContainer {
+    align-self: stretch;
+    position: relative;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 600;
+    font-family: Montserrat;
+    color: #343434;
+  }
+  .vectorIcon2 {
+    position: relative;
+    width: 241px;
+    height: 59px;
+    object-fit: cover;
+    z-index: 0;
+  }
+  .startNowFor {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    margin: 0 !important;
+    top: calc(50% - 10.5px);
+    left: calc(50% - 81.5px);
+    font-size: 18px;
+    line-height: 19.2px;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-family: Inter;
+    color: #852e2c;
+    text-align: center;
+    display: inline-block;
+    z-index: 1;
+  }
+  .item123,
+  .orderManagementSolutionThatParent {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .item123 {
+    cursor: pointer;
+    border: 0;
+    padding: 2px 3px;
+    background-color: #ffcd00;
+    border-radius: 22px 15px 28px 27px;
+    gap: 10px;
+  }
+  .orderManagementSolutionThatParent {
+    width: 100%;
+    gap: 30px;
+    text-align: center;
+    font-size: 55px;
+    color: #852e2c;
+    font-family: Recoleta;
+  }
+}
