@@ -1,0 +1,290 @@
+.footer {
+  background-color: #852e2c;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 30px;
+}
+@media (max-width: 991px) {
+  .footer {
+    max-width: 100%;
+  }
+}
+
+.footer-top {
+  width: 100%;
+  height: 70%;
+  border-bottom: 1.5px solid #fff6df;
+  display: flex;
+}
+
+.left-sidebar {
+  width: 25%;
+  padding: 100px 0px;
+  border-right: 3px solid #fff6df;
+  text-align: center;
+}
+
+@media (max-width: 950px) {
+  .left-sidebar {
+    width: 40%;
+  }
+}
+
+.footer-logo {
+  display: inline-flex;
+  color: #fff6df;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.img-30 {
+  width: 18px;
+  margin-right: 5px;
+}
+
+.icons-div {
+  border: 1px solid #ffcd00;
+  margin: 40px 0px;
+  display: inline-flex;
+}
+
+.social-icons {
+  margin: 10px;
+  transform: scale(1.2);
+  color: #fff6df;
+  cursor: pointer;
+}
+
+.social-icons-divider {
+  border: 0.5px solid #ffcd00;
+}
+
+.sidebar-text {
+  color: #fff6df;
+  font-size: 12px;
+  margin: 0px 20px;
+}
+
+.footer-top-right {
+  display: block;
+  width: 75%;
+}
+
+.email-section {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1.5px solid #fff6df;
+  padding: 40px 20px 20px 20px;
+}
+
+.subs-text {
+  color: #ffcd00;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 12px;
+  margin-right: 20px;
+}
+
+.subs-email {
+  border-bottom: 1px solid #fff6df;
+}
+
+.subs-email-input {
+  background-color: #852e2c;
+  color: #fff6df;
+  padding: 5px 10px 0px 5px;
+  outline: none;
+}
+
+@media (max-width: 950px) {
+  .subs-text {
+    margin-right: 0px;
+  }
+
+  .subs-email-input {
+    width: 70%;
+  }
+}
+
+.email-section input::placeholder {
+  color: #fff6df;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.links-table {
+  display: flex;
+  text-align: center;
+}
+
+.table-box {
+  width: 20%;
+  border-right: 1.5px solid #fff6df;
+}
+
+.table-box1 {
+  width: 30%;
+  border-right: 1.5px solid #fff6df;
+}
+
+.table-box2 {
+  width: 30%;
+}
+
+.table-head {
+  color: #ffcd00;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 25px 0px;
+  border-bottom: 1px solid #fff6df;
+}
+
+.table-body {
+  color: #fff6df;
+  margin: 30px;
+  font-weight: 200;
+}
+
+.table-item {
+  margin: 14px 0px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.div-107 {
+  cursor: pointer;
+  color: #852e2c;
+  text-align: center;
+  text-transform: capitalize;
+  align-items: center;
+  border-radius: 22px 15px 28px 27px;
+  background-color: #ffcd00;
+  align-self: center;
+  margin-top: 68px;
+  width: 100%;
+  max-width: 856px;
+  justify-content: center;
+  padding: 20px 40px;
+  font: 600 39px/120% Montserrat, -apple-system, Roboto, Helvetica, sans-serif;
+}
+@media (max-width: 991px) {
+  .div-107 {
+    max-width: 80%;
+    margin-top: 40px;
+    padding: 10 10px;
+  }
+}
+.div-108 {
+  justify-content: space-between;
+  align-self: center;
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  margin: 36px 0 17px;
+  padding: 0 20px;
+}
+@media (max-width: 991px) {
+  .div-108 {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+}
+.div-109 {
+  color: #fff6df;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.div-110 {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 14px;
+}
+.div-111 {
+  color: #fff6df;
+  text-transform: uppercase;
+  flex-grow: 1;
+  white-space: nowrap;
+}
+@media (max-width: 991px) {
+  .div-111 {
+    white-space: initial;
+  }
+}
+.div-112 {
+  color: #fff6df;
+  text-transform: uppercase;
+}
+.div-113 {
+  color: #fff6df;
+  text-transform: uppercase;
+  flex-grow: 1;
+  white-space: nowrap;
+}
+@media (max-width: 991px) {
+  .div-113 {
+    white-space: initial;
+  }
+}
+
+/* Mobile View Changes */
+
+@media (max-width: 780px) {
+  .footer-top {
+    display: block;
+  }
+
+  .left-sidebar {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .sidebar-text {
+    font-size: 16px;
+  }
+
+  .img-30 {
+    width: 40px;
+    margin-right: 10px;
+  }
+
+  .footer-top-right {
+    width: 100%;
+  }
+
+  .subs-text {
+    margin-right: 20px;
+  }
+
+  .subs-email-input {
+    width: 100%;
+  }
+
+  .div-107 {
+    max-width: 80%;
+    font: 600 22px Montserrat, -apple-system, Roboto, Helvetica, sans-serif;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 580px) {
+  .table-box {
+    width: 30%;
+  }
+
+  .table-box1 {
+    display: none;
+  }
+
+  .table-box2 {
+    width: 40%;
+  }
+}
