@@ -47,6 +47,7 @@
   border: 1px solid #ffcd00;
   margin: 40px 0px;
   display: inline-flex;
+  border-radius: 0.5rem;
 }
 
 .social-icons {
@@ -236,8 +237,9 @@
   }
 
   .left-sidebar {
-    width: 100%;
+    width: 101%;
     padding-bottom: 50px;
+    border-bottom: 1.5px solid #fff6df;
   }
 
   .footer-logo {
@@ -260,12 +262,21 @@
     width: 100%;
   }
 
+  .email-section {
+    padding: 20px;
+  }
+
   .subs-text {
+    width: 50%;
     margin-right: 20px;
   }
 
   .subs-email-input {
-    width: 100%;
+    width: 80%;
+  }
+
+  .email-section input::placeholder {
+    justify-content: center;
   }
 
   .div-107 {

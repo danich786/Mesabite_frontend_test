@@ -3,6 +3,8 @@
 import "./footer.css";
 
 import { useState } from "react";
+import Link from "next/link";
+import { toast } from "react-toastify";
 
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -14,18 +16,22 @@ import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 const Footer = () => {
   const [email, setEmail] = useState("");
 
+  const subsNewslet = () => {
+    toast.success("Thanks for subscribing to our newsletter.");
+  };
+
   return (
     <div className="footer">
       <div className="footer-top">
         <div className="left-sidebar">
-          <div className="footer-logo">
+          <Link href="/" className="footer-logo">
             <img
               loading="lazy"
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/061091552cb754a6097bf7db50219c56e5dd0d281ace37bc04c9dd599b23c792?"
               className="img-30"
             />
             Mesa Bites
-          </div>
+          </Link>
 
           <div className="icons-div">
             <FacebookIcon className="social-icons" />
