@@ -1,387 +1,336 @@
-@media screen and (max-width: 600px) {
-  .rectangle,
-  .vectorIcon {
-    position: absolute;
-    left: 0;
-  }
-  .rectangle {
-    top: 64.6px;
-    background-color: #852e2c;
-    width: 390.4px;
-    height: 1.6px;
-  }
-  .vectorIcon {
-    top: 2px;
-    width: 151px;
-    height: 23px;
-  }
-  .imageIcon {
-    position: relative;
-    width: 24px;
-    height: 24px;
-    object-fit: cover;
-  }
-  .vectorIcon1 {
-    position: relative;
-    width: 13.1px;
-    height: 7.8px;
-  }
-  .imageParent {
-    position: absolute;
-    top: 0;
-    left: 307px;
-    width: 42px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .frame2 {
-    position: absolute;
-    top: 38px;
-    left: 19px;
-    width: 349px;
-    height: 25px;
-    overflow: hidden;
-  }
-  .frame1 {
-    top: 0;
-    background-color: #852e2c;
-    height: 87px;
-    overflow: hidden;
-  }
-  .frame1,
-  .frame4,
-  .frame5,
-  .grd041Icon {
-    position: absolute;
-    left: 0;
-    width: 390px;
-  }
-  .frame5 {
-    top: 543px;
-    background-color: #852e2c;
-    height: 653px;
-    overflow: hidden;
-  }
-  .frame4,
-  .grd041Icon {
-    top: 0;
-  }
-  .grd041Icon {
-    height: 566px;
-    object-fit: cover;
-  }
-  .frame4 {
-    height: 1196px;
-    overflow: hidden;
-  }
-  .fastSimpleAnd {
-    position: absolute;
-    top: 0;
-    left: 4px;
-    display: inline-block;
-    width: 276px;
-  }
-  .frame7 {
-    position: absolute;
-    top: 0;
-    left: 42px;
-    width: 280px;
-    height: 108px;
-    overflow: hidden;
-    font-family: Recoleta;
-  }
-  .manageYourBusiness {
-    position: absolute;
-    top: 0;
-    left: 4px;
-    display: inline-block;
-    width: 290px;
-  }
-  .frame8 {
-    position: absolute;
-    top: 126px;
-    left: 35px;
-    width: 294px;
-    height: 72px;
-    overflow: hidden;
-    font-size: 20px;
-  }
-  .frame10,
-  .frame9,
-  .termsOfUse {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  .frame10,
-  .frame9 {
-    top: 553px;
-    left: 132px;
-    width: 100px;
-    height: 11px;
-    overflow: hidden;
-    text-align: left;
-    font-size: 9px;
-  }
-  .frame10 {
-    top: 538px;
-    left: 127px;
-    width: 110px;
-    height: 12px;
-    font-size: 10px;
-  }
-  .immediateSignUp {
-    left: 0;
-    display: inline-block;
-    width: 115px;
-  }
-  .frame12,
-  .hereToHelp,
-  .immediateSignUp {
-    position: absolute;
-    top: 0;
-  }
-  .frame12 {
-    left: 0;
-    width: 364px;
-    height: 66px;
-    overflow: hidden;
-  }
-  .hereToHelp {
-    left: 232px;
-    display: inline-block;
-    width: 130px;
-  }
-  .customDesign,
-  .frame14 {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  .frame14 {
-    width: 362px;
-    height: 66px;
-    overflow: hidden;
-  }
-  .customDesign {
-    display: inline-block;
-    width: 88px;
-  }
-  .frame13,
-  .frame15 {
-    position: absolute;
-    top: 0;
-    left: 129px;
-    width: 104px;
-    height: 66px;
-    overflow: hidden;
-  }
-  .frame13 {
-    left: 1px;
-    width: 362px;
-  }
-  .frame11,
-  .tradeInWeeks {
-    position: absolute;
-    left: 0;
-  }
-  .frame11 {
-    top: 244px;
-    width: 364px;
-    height: 66px;
-    overflow: hidden;
-    font-size: 16px;
-    font-family: Recoleta;
-  }
-  .tradeInWeeks {
-    top: 0;
-    font-weight: 500;
-    display: inline-block;
-    width: 57px;
-  }
-  .frame17 {
-    position: absolute;
-    top: 6px;
-    left: 1px;
-    width: 308px;
-    height: 130px;
-    overflow: hidden;
-  }
-  .itsSomethingYou {
-    left: 0;
-    font-weight: 500;
-    display: inline-block;
-    width: 81px;
-  }
-  .frame19,
-  .itsSomethingYou,
-  .wereHereTo {
-    position: absolute;
-    top: 0;
-  }
-  .frame19 {
-    left: 109px;
-    width: 92px;
-    height: 156px;
-    overflow: hidden;
-  }
-  .wereHereTo {
-    left: 232px;
-    font-weight: 500;
-    display: inline-block;
-    width: 78px;
-  }
-  .frame20 {
-    position: absolute;
-    top: 3px;
-    left: 0;
-    width: 310px;
-    height: 130px;
-    overflow: hidden;
-  }
-  .frame18 {
-    top: 0;
-    left: 0;
-    width: 310px;
-    height: 156px;
-  }
-  .frame16,
-  .frame18,
-  .frame3,
-  .frame6 {
-    position: absolute;
-    overflow: hidden;
-  }
-  .frame16 {
-    top: 328px;
-    left: 27px;
-    width: 310px;
-    height: 156px;
-    font-size: 11px;
-  }
-  .frame3,
-  .frame6 {
-    top: 598px;
-    left: 13px;
-    width: 364px;
-    height: 564px;
-  }
-  .frame3 {
-    top: 87px;
-    left: 0;
-    width: 390px;
-    height: 1196px;
-  }
-  .signInTo,
-  .stayAWhile {
-    position: absolute;
-    color: #fff6df;
-  }
-  .stayAWhile {
-    top: 35px;
-    left: 55px;
-    font-size: 35px;
-    font-family: Recoleta;
-  }
-  .signInTo {
-    top: 82px;
-    left: 92px;
-    font-size: 16px;
-  }
-  .emailParent,
-  .passwordParent {
-    width: 290px;
-    border: 0;
-    background-color: transparent;
-    position: absolute;
-    top: 126px;
-    left: 40px;
-  }
-  .passwordParent {
-    top: 192px;
-  }
-  .forgotPassword {
-    text-decoration: underline;
-    position: absolute;
-    font-size: 16px;
-    top: 265px;
-    left: 220px;
-    font-weight: 500;
-    color: inherit;
-  }
-  .frameChild {
-    position: absolute;
-    top: 261px;
-    left: 42px;
-  }
-  .createAnAccount,
-  .dontHaveAn {
-    position: absolute;
-    font-size: 16px;
-    top: 375px;
-    left: 40px;
-  }
-  .createAnAccount {
-    text-decoration: underline;
-    font-size: 16px;
-    left: 214px;
-    font-weight: 500;
-    color: inherit;
-  }
-  .login {
-    position: absolute;
-    top: calc(50% - 8.5px);
-    left: calc(50% - 21px);
-    font-size: 14px;
-    font-family: Montserrat;
-    color: #852e2c;
-    text-align: center;
-  }
-  .frame21,
-  .frame22 {
-    position: absolute;
-    border-radius: 20px;
-    overflow: hidden;
-  }
-  .frame22 {
-    cursor: pointer;
-    border: 0;
-    padding: 0;
-    background-color: #ffcd00;
-    top: 308px;
-    left: calc(50% - 145px);
-    box-shadow: 0 5px 5px rgba(236, 190, 0, 0.1);
-    width: 290px;
-    height: 45px;
-  }
-  .frame21 {
-    top: 154px;
-    left: 10px;
-    background-color: #852e2c;
-    width: 370px;
-    height: 419px;
-    text-align: left;
-    font-size: 12px;
-    color: #fffddf;
-  }
-  .frame {
-    position: relative;
-    background-color: #fff6df;
-    width: 100%;
-    height: 1283px;
-    overflow: hidden;
-    text-align: center;
-    font-size: 40px;
-    color: #fff6df;
-    font-family: Montserrat;
-  }
+.dropdownIcon,
+.logoIcon {
+  position: relative;
+  width: 151px;
+  height: 23px;
+  object-fit: cover;
+}
+.dropdownIcon,
+.dropdownIcon {
+  width: 13px;
+  height: 7.5px;
+}
+.header,
+.header {
+  align-self: stretch;
+  background-color: #852e2c;
+  border-bottom: 2px solid #ffcd00;
+  box-sizing: border-box;
+  height: 90px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 18px 41px 23px 64px;
+}
+.signInTo,
+.stayAWhile {
+  position: relative;
+}
+.signInTo {
+  font-size: 16px;
+  font-family: Montserrat;
+}
+.emailText {
+  font-size: 12px;
+  font-family: Montserrat;
+  text-transform: uppercase;
+}
 
-  .inputField {
-    width: 100%;
-    padding: 6px;
-    font-size: 18px;
-    color: #852e2c;
+.textContainer5 {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.textfieldemail {
+  border: 1px solid #acacac;
+  outline: 0;
+  background-color: #fff6df;
+  align-self: stretch;
+  border-radius: 22px 15px 28px 27px;
+  box-sizing: border-box;
+  height: 40px;
+  justify-content: center;
+  padding: 15px 25px 16px 20px;
+  color: brown;
+  font-size: 16px;
+  font-synthesis: weight;
+}
+.inputfieldcontainername,
+.textfieldemail,
+.textfieldpass {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.inputfieldcontainername {
+  width: 290px;
+  justify-content: flex-start;
+  gap: 5px;
+}
+.textfieldpass {
+  border: 1px solid #acacac;
+  outline: 0;
+  background-color: #fff6df;
+  align-self: stretch;
+  border-radius: 22px 15px 28px 27px;
+  box-sizing: border-box;
+  height: 40px;
+  justify-content: center;
+  padding: 15px 25px 16px 20px;
+  color: brown;
+  font-size: 16px;
+  font-family: "montserrat";
+}
+.container3,
+.inputfieldscontainer {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.inputfieldscontainer {
+  align-items: flex-start;
+  gap: 11px;
+  font-size: 9px;
+  font-family: Montserrat;
+}
+.container3 {
+  align-items: center;
+  gap: 23px;
+}
+.forgotPassword {
+  text-decoration: underline;
+  position: relative;
+  font-weight: 500;
+  color: inherit;
+}
+.container2,
+.frameParent {
+  flex-shrink: 0;
+  display: flex;
+}
+.frameParent {
+  width: 288px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #fffddf;
+  font-family: Montserrat;
+}
+.container2 {
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 12px;
+}
+.cta {
+  position: relative;
+  font-size: 14px;
+  font-family: Montserrat;
+  color: #852e2c;
+  text-align: center;
+}
+.ctaWrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.btnLargeLongFillDefa {
+  cursor: pointer;
+  border: 0;
+  padding: 2px 3px;
+  background-color: #ffcd00;
+  border-radius: 22px 15px 28px 27px;
+  width: 290px;
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.container11,
+.textContainer6 {
+  display: flex;
+  align-items: flex-start;
+}
+.container11 {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 29px;
+}
+.textContainer6 {
+  width: 273px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #fffddf;
+  font-family: Montserrat;
+}
+.container1 {
+  align-self: stretch;
+  justify-content: flex-start;
+  gap: 22px;
+}
+.container1,
+.leftcontainer,
+.logincontainer,
+.rigntcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logincontainer {
+  border-radius: 20px;
+  background-color: #852e2c;
+  overflow: hidden;
+  justify-content: center;
+  padding: 29px 40px;
+}
+.leftcontainer,
+.rigntcontainer {
+  align-self: stretch;
+  flex: 1;
+}
+.rigntcontainer {
+  justify-content: center;
+  padding: 10px;
+  background-image: url(/authentication/rigntcontainer@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.leftcontainer {
+  justify-content: flex-start;
+}
+.fastSimpleAnd,
+.manageYourBusiness {
+  align-self: stretch;
+  position: relative;
+}
+.manageYourBusiness {
+  font-size: 26px;
+  font-family: Montserrat;
+}
+.textContainer2 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 18px;
+}
+.itsSomethingYou {
+  align-self: stretch;
+  position: relative;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: Montserrat;
+}
+.customDesignDataParent,
+.hereToHelpEveryRestaurantParent,
+.immediateSignUpAccessParent {
+  flex: 1;
+  height: 194px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 18px;
+}
+.hereToHelpEveryRestaurantParent,
+.immediateSignUpAccessParent {
+  gap: 24px;
+}
+.hereToHelpEveryRestaurantParent {
+  gap: 21px;
+}
+.textContainer1,
+.textContainer3 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.textContainer3 {
+  height: 214.5px;
+  flex-direction: row;
+  font-size: 18px;
+}
+.textContainer1 {
+  flex-direction: column;
+}
+.termsOfUse {
+  align-self: stretch;
+  position: relative;
+  font-size: 9px;
+}
+.textContainer4,
+.textcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.textContainer4 {
+  justify-content: flex-end;
+  gap: 3px;
+  font-size: 10px;
+  font-family: Montserrat;
+}
+.textcontainer {
+  align-self: stretch;
+  flex: 1;
+  background-color: #852e2c;
+  overflow: hidden;
+  justify-content: center;
+  padding: 0 64px 20px 50px;
+  gap: 100px;
+  text-align: center;
+  font-size: 48px;
+}
+.signInLocofyReady {
+  position: relative;
+  background-color: #fff6df;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: 35px;
+  color: #fff6df;
+  font-family: Recoleta;
+}
+@media screen and (max-width: 960px) {
+  .rigntcontainer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+  }
+  .leftcontainer {
+    flex: unset;
+    align-self: stretch;
+  }
+  .textContainer1 {
+    padding-top: 50px;
+    box-sizing: border-box;
+  }
+  .textcontainer {
+    flex: unset;
+    align-self: stretch;
+  }
+  .signInLocofyReady {
+    flex-direction: column;
+    height: auto;
   }
 }

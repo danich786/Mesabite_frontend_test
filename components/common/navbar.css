@@ -63,15 +63,15 @@
 
 .nav-menu-wrapper {
   display: flex;
+  position: absolute;
+  top: 40px;
+  right: 0;
   justify-content: flex-end;
   align-items: flex-end;
   flex-direction: column;
   text-align: end;
   background: #17252a;
   padding-right: 2rem;
-  position: absolute;
-  top: 40px;
-  right: 0;
   margin-top: 1rem;
   min-width: 150px;
   border-radius: 5px;

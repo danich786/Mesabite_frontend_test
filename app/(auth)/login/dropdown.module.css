@@ -1,0 +1,66 @@
+.languageBtnDiv {
+  position: relative;
+  display: inline-block;
+}
+
+.languageBtn {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.languageBtnIcon {
+  width: 26px;
+  height: 26px;
+}
+
+.languageMenu {
+  position: absolute;
+  border-radius: 10px;
+  background-color: #fff6df;
+  width: 135px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px;
+  box-sizing: border-box;
+  gap: 10px;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  text-align: left;
+  font-size: 15px;
+  color: #000;
+  font-family: Montserrat;
+  z-index: 1;
+}
+
+@media (max-width: 960px) {
+  .languageMenu {
+    right: 2%;
+  }
+}
+
+.english {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.englishIcon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
+
+.espaol {
+  flex: 1;
+  position: relative;
+}
