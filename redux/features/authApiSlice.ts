@@ -43,6 +43,7 @@ const authApiSlice = apiSlice.injectEndpoints({
     }),
     register: builder.mutation({
       query: ({
+        is_owner,
         first_name,
         last_name,
         resturant_name,
@@ -54,6 +55,7 @@ const authApiSlice = apiSlice.injectEndpoints({
         url: "/users/",
         method: "POST",
         body: {
+          is_owner,
           first_name,
           last_name,
           resturant_name,

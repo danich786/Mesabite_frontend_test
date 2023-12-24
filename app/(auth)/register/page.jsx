@@ -5,10 +5,9 @@ import styles from "./page.module.css";
 import { PhoneInput } from "react-international-phone";
 import "react-international-phone/style.css";
 
-import { useState } from "react";
 import Link from "next/link";
 import Spinner from "@/components/common/Spinner";
-import { useRegister } from "@/hooks";
+import useRegister from "./owner-register";
 
 import LanguageDropdown from "../login/LanguageDropdown";
 
@@ -24,7 +23,6 @@ const Register = () => {
     re_password,
     isLoading,
     onChange,
-    onChangePhone,
     onSubmit,
   } = useRegister();
 
@@ -39,8 +37,9 @@ const Register = () => {
           />
           <LanguageDropdown />
         </div>
-        <form onSubmit={onSubmit}>
-          <div className={styles.rigntcontainer}>
+
+        <div className={styles.rigntcontainer}>
+          <form onSubmit={onSubmit}>
             <div className={styles.registercontainer}>
               <div className={styles.textcontainer}>
                 <b className={styles.joinUs}>Join Us</b>
@@ -102,6 +101,7 @@ const Register = () => {
                     name="phone_no"
                     value={phone_no}
                     onChange={(phone_no) => setPhoneNo(phone_no)}
+                    required
                     inputStyle={{
                       backgroundColor: "transparent",
                       borderRadius: "0px 15px 28px 0px",
@@ -124,7 +124,6 @@ const Register = () => {
                         height: "40px",
                       },
                     }}
-                    required
                   />
                 </div>
                 <div className={styles.restaurantnamecontainer}>
@@ -162,8 +161,8 @@ const Register = () => {
                 </Link>
               </div>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
       <div className={styles.textcontainer1}>
         <div className={styles.textContainer1}>

@@ -17,6 +17,7 @@ export default function useRegister() {
   });
 
   const [phone_no, setPhoneNo] = useState("");
+  const is_owner = true;
 
   const {
     first_name,
@@ -37,6 +38,7 @@ export default function useRegister() {
     event.preventDefault();
 
     register({
+      is_owner,
       first_name,
       last_name,
       resturant_name,
@@ -48,7 +50,7 @@ export default function useRegister() {
       .unwrap()
       .then(() => {
         toast.success("Please check email to verify account");
-        router.push("/login");
+        // router.push("/login");
       })
       .catch(() => {
         toast.error("Failed to register account");
