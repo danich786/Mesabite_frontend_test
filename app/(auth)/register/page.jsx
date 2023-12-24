@@ -108,6 +108,7 @@ const Register = () => {
                       color: "#fff",
                       fontSize: "16px",
                       border: "1px solid #acacac",
+                      width: "255px",
                       alignSelf: "stretch",
                       boxSizing: "border-box",
                       height: "40px",

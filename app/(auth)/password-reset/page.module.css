@@ -1,0 +1,322 @@
+.dropdownIcon,
+.englishIcon,
+.logoIcon {
+  position: relative;
+  width: 151px;
+  height: 23px;
+  object-fit: cover;
+}
+.dropdownIcon,
+.englishIcon {
+  width: 24px;
+  height: 24px;
+}
+.dropdownIcon {
+  width: 13px;
+  height: 7.5px;
+}
+.header,
+.language {
+  display: flex;
+  flex-direction: row;
+}
+.language {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+}
+.header {
+  align-self: stretch;
+  background-color: #852e2c;
+  border-bottom: 2px solid #ffcd00;
+  box-sizing: border-box;
+  height: 90px;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 18px 41px 23px 64px;
+}
+.passwordReset {
+  position: relative;
+}
+
+.emailText {
+  font-size: 14px;
+}
+
+.enterTheEmail {
+  margin: 0;
+}
+.enterTheEmailContainer {
+  position: relative;
+  font-size: 16px;
+  font-family: Montserrat;
+}
+.textContainer5 {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.inputfieldcontainername,
+.textfieldemail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.textfieldemail {
+  border: 1px solid #acacac;
+  outline: 0;
+  background-color: #fff6df;
+  align-self: stretch;
+  border-radius: 22px 15px 28px 27px;
+  box-sizing: border-box;
+  height: 40px;
+  justify-content: center;
+  padding: 15px 25px 16px 20px;
+  color: brown;
+  font-size: 16px;
+  font-synthesis: weight;
+}
+.inputfieldcontainername {
+  width: 290px;
+  justify-content: flex-start;
+  gap: 5px;
+}
+.inputfieldscontainer {
+  align-items: flex-start;
+  text-align: left;
+  font-size: 9px;
+  font-family: Montserrat;
+}
+.container2,
+.container3,
+.inputfieldscontainer {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.container3 {
+  align-items: center;
+  gap: 23px;
+}
+.container2 {
+  align-items: flex-end;
+}
+.cta {
+  position: relative;
+  font-size: 14px;
+  font-family: Montserrat;
+  color: #852e2c;
+  text-align: center;
+}
+.ctaWrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.btnLargeLongFillDefa {
+  cursor: pointer;
+  border: 0;
+  padding: 2px 3px;
+  background-color: #ffcd00;
+  border-radius: 22px 15px 28px 27px;
+  width: 290px;
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.container11 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 29px;
+}
+.backToLog {
+  text-decoration: underline;
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  color: inherit;
+}
+.textContainer6 {
+  width: 273px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: 12px;
+  color: #fffddf;
+  font-family: Montserrat;
+}
+.container1 {
+  align-self: stretch;
+  justify-content: flex-start;
+  gap: 22px;
+}
+.container1,
+.leftcontainer,
+.logincontainer,
+.rigntcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logincontainer {
+  border-radius: 20px;
+  background-color: #852e2c;
+  overflow: hidden;
+  justify-content: center;
+  padding: 29px 40px;
+}
+.leftcontainer,
+.rigntcontainer {
+  align-self: stretch;
+  flex: 1;
+}
+.rigntcontainer {
+  justify-content: center;
+  padding: 10px;
+  background-image: url(/authentication/rigntcontainer@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.leftcontainer {
+  justify-content: flex-start;
+}
+.fastSimpleAnd,
+.manageYourBusiness {
+  align-self: stretch;
+  position: relative;
+}
+.manageYourBusiness {
+  font-size: 26px;
+  font-family: Montserrat;
+}
+.textContainer2 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 18px;
+}
+.itsSomethingYou {
+  align-self: stretch;
+  position: relative;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: Montserrat;
+}
+.customDesignDataParent,
+.hereToHelpEveryRestaurantParent,
+.immediateSignUpAccessParent {
+  flex: 1;
+  height: 194px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 18px;
+}
+.hereToHelpEveryRestaurantParent,
+.immediateSignUpAccessParent {
+  gap: 24px;
+}
+.hereToHelpEveryRestaurantParent {
+  gap: 21px;
+}
+.textContainer1,
+.textContainer3 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.textContainer3 {
+  height: 214.5px;
+  flex-direction: row;
+  font-size: 18px;
+}
+.textContainer1 {
+  flex-direction: column;
+}
+.termsOfUse {
+  align-self: stretch;
+  position: relative;
+  font-size: 11px;
+}
+.textContainer4,
+.textcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.textContainer4 {
+  justify-content: flex-end;
+  gap: 3px;
+  font-size: 10px;
+  font-family: Montserrat;
+}
+.textcontainer {
+  align-self: stretch;
+  flex: 1;
+  background-color: #852e2c;
+  overflow: hidden;
+  justify-content: center;
+  padding: 0 50px 20px 50px;
+  gap: 100px;
+  font-size: 48px;
+}
+.paswordRestLocofyReady {
+  position: relative;
+  background-color: #fff6df;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: center;
+  font-size: 35px;
+  color: #fff6df;
+  font-family: Recoleta;
+}
+@media screen and (max-width: 960px) {
+  .rigntcontainer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+  }
+  .leftcontainer {
+    flex: unset;
+    align-self: stretch;
+  }
+  .textContainer1 {
+    padding-top: 50px;
+    box-sizing: border-box;
+  }
+  .textcontainer {
+    flex: unset;
+    align-self: stretch;
+  }
+  .paswordRestLocofyReady {
+    flex-direction: column;
+    height: auto;
+  }
+}

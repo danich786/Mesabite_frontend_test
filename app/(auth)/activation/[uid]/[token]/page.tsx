@@ -19,6 +19,8 @@ export default function Activation({ params }: Props) {
   useEffect(() => {
     const { uid, token } = params;
 
+    console.log(uid, token);
+
     activation({ uid, token })
       .unwrap()
       .then(() => {
