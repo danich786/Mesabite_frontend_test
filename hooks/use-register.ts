@@ -10,12 +10,22 @@ export default function useRegister() {
   const [formData, setFormData] = useState({
     first_name: "",
     last_name: "",
+    resturant_name: "",
     email: "",
     password: "",
     re_password: "",
   });
 
-  const { first_name, last_name, email, password, re_password } = formData;
+  const [phone_no, setPhoneNo] = useState("");
+
+  const {
+    first_name,
+    last_name,
+    resturant_name,
+    email,
+    password,
+    re_password,
+  } = formData;
 
   const onChange = (event: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
@@ -26,11 +36,19 @@ export default function useRegister() {
   const onSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    register({ first_name, last_name, email, password, re_password })
+    register({
+      first_name,
+      last_name,
+      resturant_name,
+      email,
+      phone_no,
+      password,
+      re_password,
+    })
       .unwrap()
       .then(() => {
         toast.success("Please check email to verify account");
-        router.push("/auth/login");
+        router.push("/login");
       })
       .catch(() => {
         toast.error("Failed to register account");
@@ -40,7 +58,10 @@ export default function useRegister() {
   return {
     first_name,
     last_name,
+    resturant_name,
     email,
+    phone_no,
+    setPhoneNo,
     password,
     re_password,
     isLoading,
