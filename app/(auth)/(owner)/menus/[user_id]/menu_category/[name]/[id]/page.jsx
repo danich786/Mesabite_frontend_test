@@ -87,7 +87,7 @@ export default async function MenuCategoryDetails({ params }) {
               component="img"
               alt="green iguana"
               height="140"
-              image={process.env.NEXT_PUBLIC_HOST + menu_item.image}
+              image={menu_item.image}
             />
             <CardContent sx={{ backgroundColor: "#fbf3db" }}>
               <div>

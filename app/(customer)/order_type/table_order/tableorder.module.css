@@ -1,0 +1,147 @@
+.logocafeIcon {
+  position: relative;
+  width: 186px;
+  height: 50px;
+  object-fit: cover;
+}
+.extraSettings {
+  position: relative;
+  text-transform: capitalize;
+}
+.imageIcon {
+  position: relative;
+  width: 143px;
+  height: 90px;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+  margin-left: -8px;
+}
+.container1,
+.extraSettingsParent {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.container1 {
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  gap: 15px;
+}
+.tableNumber,
+.tableOrder {
+  position: relative;
+}
+.tableNumber {
+  line-height: 21px;
+  font-weight: 600;
+}
+.textfieldrestaurantname {
+  border: 1px solid #852e2c;
+  outline: 0;
+  background-color: transparent;
+  align-self: stretch;
+  border-radius: 22px 15px 28px 27px;
+  box-sizing: border-box;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 15px 25px 16px 20px;
+  color: #fff;
+}
+.tableNumberParent,
+.textfieldrestaurantnameParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.textfieldrestaurantnameParent {
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 10px;
+  color: #bf5627;
+}
+.tableNumberParent {
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 15px;
+  font-family: Montserrat;
+}
+.frameIcon,
+.orderNow {
+  position: relative;
+  flex-shrink: 0;
+}
+.frameIcon {
+  width: 330px;
+  height: 101px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.orderNow {
+  font-size: 18px;
+  text-transform: capitalize;
+  display: inline-block;
+  font-family: Recoleta;
+  color: #852e2c;
+  text-align: center;
+  width: 96px;
+}
+.orderNowWrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.btnLargeLongFillDefa,
+.container2,
+.landing2 {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.btnLargeLongFillDefa {
+  cursor: pointer;
+  border: 0;
+  padding: 2px 3px;
+  background-color: #ffcd00;
+  align-self: stretch;
+  border-radius: 22px 15px 28px 27px;
+  box-shadow: 0 5px 5px rgba(215, 200, 160, 0.48);
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+}
+.container2,
+.landing2 {
+  width: 100%;
+}
+.container2 {
+  border-radius: 25px;
+  background-color: #fff6df;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 25px 30px;
+  gap: 30px;
+  max-width: 420px;
+  font-size: 24px;
+}
+.landing2 {
+  position: relative;
+  background-color: #ffbe9f;
+  height: 852px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 0 30px;
+  text-align: left;
+  font-size: 34px;
+  color: #852e2c;
+  font-family: Recoleta;
+}

@@ -109,9 +109,7 @@ const Menus = async ({ params }) => {
                   <div
                     className={styles.menuBox}
                     style={{
-                      backgroundImage: `url(${
-                        process.env.NEXT_PUBLIC_HOST + menu_category.image
-                      })`,
+                      backgroundImage: `url(${menu_category.image})`,
                     }}
                   >
                     <div className={styles.boxFooter}>

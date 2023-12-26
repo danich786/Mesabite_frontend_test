@@ -1,0 +1,167 @@
+.logocafeIcon {
+  position: relative;
+  width: 186px;
+  height: 50px;
+  object-fit: cover;
+}
+.extraSettings {
+  position: relative;
+  text-transform: capitalize;
+}
+.imageIcon {
+  position: relative;
+  width: 143px;
+  height: 90px;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+  margin-left: -8px;
+}
+.container1,
+.extraSettingsParent {
+  display: flex;
+  justify-content: flex-start;
+}
+.extraSettingsParent {
+  flex-shrink: 0;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.container1 {
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  gap: 15px;
+}
+.reserveATable {
+  position: relative;
+  font-size: 24px;
+  font-family: Recoleta;
+}
+.whenAreYou {
+  position: relative;
+  line-height: 21px;
+  font-weight: 600;
+}
+.today {
+  position: relative;
+  font-weight: 500;
+}
+.vectorIcon {
+  position: relative;
+  width: 14px;
+  height: 7px;
+  object-fit: cover;
+}
+.languagedropmenu,
+.languagedropmenuWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.languagedropmenu {
+  flex: 1;
+  border-radius: 22px 15px 28px 27px;
+  border: 1px solid #852e2c;
+  flex-shrink: 0;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.languagedropmenuWrapper {
+  align-self: stretch;
+  justify-content: flex-start;
+  font-size: 14px;
+}
+.whenAreYouComingParent {
+  width: 188px;
+  gap: 5px;
+}
+.atWhichClockParent,
+.howManyPeopleAreComingParent,
+.textfieldrestaurantname,
+.whenAreYouComingParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.atWhichClockParent {
+  width: 147px;
+  gap: 5px;
+}
+.howManyPeopleAreComingParent,
+.textfieldrestaurantname {
+  align-self: stretch;
+}
+.textfieldrestaurantname {
+  border: 1px solid #852e2c;
+  outline: 0;
+  background-color: transparent;
+  border-radius: 22px 15px 28px 27px;
+  box-sizing: border-box;
+  height: 40px;
+  padding: 15px 25px 16px 20px;
+  color: #fff;
+}
+.howManyPeopleAreComingParent {
+  gap: 5px;
+}
+.reserveNow {
+  position: relative;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-family: Recoleta;
+  color: #fff6df;
+  text-align: center;
+}
+.reserveNowWrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.btnLargeLongFillDefa {
+  cursor: pointer;
+  border: 0;
+  padding: 2px 3px;
+  background-color: #f3cfb2;
+  align-self: stretch;
+  border-radius: 22px 15px 28px 27px;
+  box-shadow: 0 5px 5px rgba(215, 200, 160, 0.48);
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+}
+.btnLargeLongFillDefa,
+.container2,
+.reserve {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.container2 {
+  border-radius: 25px;
+  background-color: #fff6df;
+  width: 420px;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 25px 30px;
+  gap: 30px;
+  max-width: 420px;
+  font-size: 15px;
+  font-family: Montserrat;
+}
+.reserve {
+  position: relative;
+  background-color: #ffbe9f;
+  width: 100%;
+  height: 852px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 0 30px;
+  text-align: left;
+  font-size: 34px;
+  color: #852e2c;
+  font-family: Recoleta;
+}

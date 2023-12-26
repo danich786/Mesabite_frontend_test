@@ -4,7 +4,7 @@ const baseUrl = process.env.NEXT_PUBLIC_HOST;
 
 const AxiosInstance = axios.create({
   baseURL: baseUrl,
-  timeout: 5000,
+  timeout: 50000,
   headers: {
     "Content-Type": "multipart/form-data",
     accept: "application/json",

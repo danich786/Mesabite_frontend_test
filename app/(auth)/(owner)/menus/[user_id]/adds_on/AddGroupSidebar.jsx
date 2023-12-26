@@ -118,8 +118,8 @@ export default function RightSidebar(props) {
 
         <div className={styles.sdHeading}>Add On Group Type</div>
 
-        <div className={styles.radioBtns}>
-          <label style={{ marginRight: "5%" }}>
+        <div>
+          <label className={styles.radioBtns}>
             <input
               type="radio"
               name="grouptype"
