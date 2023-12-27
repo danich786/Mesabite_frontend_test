@@ -1,15 +1,10 @@
 "use client";
 
-import { useCallback } from "react";
 import { useRouter } from "next/navigation";
 import styles from "./confirmation.module.css";
 
 const Reserve3 = () => {
   const router = useRouter();
-
-  const onSkipTextClick = useCallback(() => {
-    router.push("/");
-  }, [router]);
 
   return (
     <div className={styles.reserve3}>
@@ -24,12 +19,22 @@ const Reserve3 = () => {
         </div>
       </div>
       <div className={styles.btnLargeLongFillDefaParent}>
-        <button className={styles.btnLargeLongFillDefa}>
+        <button
+          onClick={() => {
+            router.push("/menu");
+          }}
+          className={styles.btnLargeLongFillDefa}
+        >
           <div className={styles.orderNowWrapper}>
-            <b className={styles.orderNow}>{`Order Now `}</b>
+            <b className={styles.orderNow}>Order Now</b>
           </div>
         </button>
-        <b className={styles.skip} onClick={onSkipTextClick}>
+        <b
+          className={styles.skip}
+          onClick={() => {
+            router.push("/");
+          }}
+        >
           Skip
         </b>
       </div>

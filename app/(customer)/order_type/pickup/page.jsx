@@ -1,6 +1,21 @@
+"use client";
+
 import styles from "./pickup.module.css";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const Pickup = () => {
+  const router = useRouter();
+  const [pickup_time, setPickupTime] = useState();
+
+  const orderNow = (pickup_time) => {
+    if (pickup_time == "") {
+      alert("Please enter the time at which you will pickup your order.");
+    } else {
+      router.push(`/menu/${table_no}`);
+    }
+  };
+
   return (
     <div className={styles.landing3}>
       <div className={styles.container1}>
@@ -24,7 +39,8 @@ const Pickup = () => {
           <div className={styles.tableNumber}>Table Number</div>
           <div className={styles.languagedropmenuParent}>
             <div className={styles.languagedropmenu}>
-              <div className={styles.english}>English</div>
+              <div className={styles.english}>Time</div>
+
               <img
                 className={styles.vectorIcon}
                 alt=""
@@ -37,7 +53,10 @@ const Pickup = () => {
           </div>
         </div>
         <img className={styles.frameIcon} alt="" src="/customer/frame@2x.png" />
-        <button className={styles.btnLargeLongFillDefa}>
+        <button
+          onClick={() => orderNow(pickup_time)}
+          className={styles.btnLargeLongFillDefa}
+        >
           <div className={styles.orderNowWrapper}>
             <b className={styles.orderNow}>{`Order Now `}</b>
           </div>

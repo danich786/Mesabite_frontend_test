@@ -2,10 +2,21 @@
 
 import { useState } from "react";
 import styles from "./tableorder.module.css";
+import { useRouter } from "next/navigation";
 
 const Landing2 = () => {
-  const [textfieldRESTAURANTNAMEValue, setTextfieldRESTAURANTNAMEValue] =
-    useState("");
+  const router = useRouter();
+
+  const [table_no, setTableNo] = useState("");
+
+  const orderNow = (table_no) => {
+    if (table_no == "") {
+      alert("Please enter your table number.");
+    } else {
+      router.push(`/menu/${table_no}`);
+    }
+  };
+
   return (
     <div className={styles.landing2}>
       <div className={styles.container1}>
@@ -31,16 +42,19 @@ const Landing2 = () => {
             <input
               className={styles.textfieldrestaurantname}
               type="text"
-              value={textfieldRESTAURANTNAMEValue}
-              onChange={(event) =>
-                setTextfieldRESTAURANTNAMEValue(event.target.value)
-              }
+              name="table_number"
+              value={table_no}
+              onChange={(event) => setTableNo(event.target.value)}
+              required
             />
             <div className={styles.tableOrder}>0/50</div>
           </div>
         </div>
         <img className={styles.frameIcon} alt="" src="/customer/frame@2x.png" />
-        <button className={styles.btnLargeLongFillDefa}>
+        <button
+          onClick={() => orderNow(table_no)}
+          className={styles.btnLargeLongFillDefa}
+        >
           <div className={styles.orderNowWrapper}>
             <b className={styles.orderNow}>{`Order Now `}</b>
           </div>

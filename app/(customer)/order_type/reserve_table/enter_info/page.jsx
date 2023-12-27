@@ -2,10 +2,22 @@
 
 import { useState } from "react";
 import styles from "../reserve.module.css";
+import { useRouter } from "next/navigation";
+
+import { PhoneInput } from "react-international-phone";
+import "react-international-phone/style.css";
 
 const Reserve = () => {
-  const [textfieldRESTAURANTNAMEValue, setTextfieldRESTAURANTNAMEValue] =
-    useState("");
+  const router = useRouter();
+
+  const [name, setName] = useState("");
+  const [phone_no, setPhoneNo] = useState("");
+  const [email, setEmail] = useState("");
+
+  const reserveNow = () => {
+    router.push("./enter_info/confirmation");
+  };
+
   return (
     <div className={styles.reserve}>
       <div className={styles.container1}>
@@ -28,41 +40,80 @@ const Reserve = () => {
         <div className={styles.howManyPeopleAreComingParent}>
           <div className={styles.whenAreYou}>Your Full Name</div>
           <input
-            className={styles.textfieldrestaurantname}
+            className={styles.peopleCount}
             type="text"
-            value={textfieldRESTAURANTNAMEValue}
-            onChange={(event) =>
-              setTextfieldRESTAURANTNAMEValue(event.target.value)
-            }
+            name="name"
+            value={name}
+            onChange={(event) => setName(event.target.value)}
+            placeholder="Name"
+            autoComplete="name"
           />
         </div>
         <div className={styles.howManyPeopleAreComingParent}>
           <div className={styles.whenAreYou}>Your Phone Number</div>
-          <input
-            className={styles.textfieldrestaurantname}
-            type="text"
-            value={textfieldRESTAURANTNAMEValue}
-            onChange={(event) =>
-              setTextfieldRESTAURANTNAMEValue(event.target.value)
-            }
+          <PhoneInput
+            defaultCountry="es"
+            name="phone_no"
+            value={phone_no}
+            onChange={(phone_no) => setPhoneNo(phone_no)}
+            required
+            inputStyle={{
+              backgroundColor: "transparent",
+              borderRadius: "0px 15px 28px 0px",
+              color: "#852e2c",
+              fontSize: "16px",
+              border: "1px solid #852e2c",
+              width: "255px",
+              alignSelf: "stretch",
+              boxSizing: "border-box",
+              height: "40px",
+              justifyContent: "center",
+              padding: "15px 25px 16px 10px",
+              outline: "none",
+            }}
+            countrySelectorStyleProps={{
+              buttonStyle: {
+                backgroundColor: "transparent",
+                border: "1px solid #852e2c",
+                borderRadius: "22px 0px 0px 27px",
+                paddingLeft: "10px",
+                height: "40px",
+              },
+            }}
           />
         </div>
         <div className={styles.howManyPeopleAreComingParent}>
           <div className={styles.whenAreYou}>Your Email Address (Optional)</div>
           <input
-            className={styles.textfieldrestaurantname}
-            type="text"
-            value={textfieldRESTAURANTNAMEValue}
-            onChange={(event) =>
-              setTextfieldRESTAURANTNAMEValue(event.target.value)
-            }
+            className={styles.peopleCount}
+            type="email"
+            name="email"
+            value={email}
+            onChange={(event) => setEmail(event.target.value)}
+            placeholder="email@example.com"
+            autoComplete="email"
           />
         </div>
-        <button className={styles.btnLargeLongFillDefa}>
-          <div className={styles.reserveNowWrapper}>
-            <b className={styles.reserveNow}>Reserve Now</b>
-          </div>
-        </button>
+        {name && phone_no.length > 11 ? (
+          <button
+            onClick={() => reserveNow()}
+            className={styles.btnLargeLongFillDefa}
+            style={{ backgroundColor: "#852e2c" }}
+          >
+            <div className={styles.reserveNowWrapper}>
+              <b className={styles.reserveNow}>Reserve Now</b>
+            </div>
+          </button>
+        ) : (
+          <button
+            onClick={() => alert("Please fill the details.")}
+            className={styles.btnLargeLongFillDefa}
+          >
+            <div className={styles.reserveNowWrapper}>
+              <b className={styles.reserveNow}>Reserve Now</b>
+            </div>
+          </button>
+        )}
       </div>
     </div>
   );
