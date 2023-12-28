@@ -57,7 +57,7 @@ const Menu = async ({ params }) => {
                       <img
                         className={styles.frappeVirselis1Icon}
                         alt=""
-                        src={process.env.NEXT_PUBLIC_HOST + menu_category.image}
+                        src={menu_category.image}
                       />
                     </div>
 
@@ -82,7 +82,7 @@ const Menu = async ({ params }) => {
                       <img
                         className={styles.frappeVirselis1Icon}
                         alt=""
-                        src={process.env.NEXT_PUBLIC_HOST + menu_category.image}
+                        src={menu_category.image}
                       />
                     </div>
 
