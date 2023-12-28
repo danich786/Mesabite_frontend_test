@@ -1,0 +1,83 @@
+.frappeVirselis1Icon {
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 179px;
+  object-fit: cover;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+.imagefream {
+  align-self: stretch;
+  border-radius: 55px 55px 0 0;
+  height: 179px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 0;
+}
+.cafsCaliente {
+  position: relative;
+  text-transform: capitalize;
+}
+.unaCombinacinunaCombinacin {
+  margin: 0;
+}
+.unaCombinacinunaCombinacinContainer {
+  align-self: stretch;
+  position: relative;
+  font-size: 12px;
+  text-transform: capitalize;
+  font-family: Montserrat;
+  text-align: left;
+}
+.cafsCalienteParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 20px;
+  gap: 10px;
+  z-index: 1;
+  height: 97px;
+}
+.catogerycontainer1,
+.soldout {
+  border-radius: 55px 55px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+.soldout {
+  margin: 0 !important;
+  position: absolute;
+  top: 0;
+  left: 225px;
+  background-color: #ffcd00;
+  box-shadow: 0 5px 5px rgba(255, 205, 0, 0.1);
+  width: 89px;
+  height: 45px;
+  justify-content: center;
+  padding: 0 10px;
+  z-index: 2;
+  font-size: 16px;
+  color: #852e2c;
+}
+.catogerycontainer1 {
+  background-color: #d9d9d9;
+  width: 339px;
+  justify-content: flex-start;
+  padding: 0 0 20px;
+  position: relative;
+  gap: 10px;
+  text-align: center;
+  font-size: 22px;
+  color: #a9a9a9;
+  font-family: Recoleta;
+}

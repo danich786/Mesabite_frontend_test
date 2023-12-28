@@ -13,7 +13,7 @@ const Landing2 = () => {
     if (table_no == "") {
       alert("Please enter your table number.");
     } else {
-      router.push(`/menu/${table_no}`);
+      router.push(`../menu/${table_no}`);
     }
   };
 
@@ -56,7 +56,7 @@ const Landing2 = () => {
           className={styles.btnLargeLongFillDefa}
         >
           <div className={styles.orderNowWrapper}>
-            <b className={styles.orderNow}>{`Order Now `}</b>
+            <b className={styles.orderNow}>Order Now</b>
           </div>
         </button>
       </div>

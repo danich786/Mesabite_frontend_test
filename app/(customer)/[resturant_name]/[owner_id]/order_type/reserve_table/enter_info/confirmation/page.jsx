@@ -21,7 +21,7 @@ const Reserve3 = () => {
       <div className={styles.btnLargeLongFillDefaParent}>
         <button
           onClick={() => {
-            router.push("/menu");
+            router.push("../../../menu/");
           }}
           className={styles.btnLargeLongFillDefa}
         >
