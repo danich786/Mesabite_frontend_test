@@ -3,6 +3,24 @@ import MenuDrawerhook from "./components/menu-drawer-hook";
 import CatogeryContainer1 from "./components/catogery-container1";
 import Link from "next/link";
 
+const getResturantOwner = async (owner_id) => {
+  try {
+    const res = await fetch(
+      process.env.NEXT_PUBLIC_HOST + "/get_user/" + owner_id,
+      {
+        cache: "no-store",
+      }
+    );
+
+    if (!res.ok) {
+      throw new Error("Error while fetching Owner");
+    }
+    return res.json();
+  } catch (error) {
+    console.log("Error loading User: ", error);
+  }
+};
+
 const getMenuCategories = async (owner_id) => {
   try {
     const res = await fetch(
@@ -22,15 +40,16 @@ const getMenuCategories = async (owner_id) => {
 };
 
 const Menu = async ({ params }) => {
+  const owner = await getResturantOwner(params.owner_id);
   const menu_categories = await getMenuCategories(params.owner_id);
 
   return (
     <>
       <div className={styles.menu1}>
         <div className={styles.header}>
-          <div className={styles.pecatom}>{params.resturant_name}</div>
+          <div className={styles.pecatom}>{owner.resturant_name}</div>
           <div className={styles.headerInner}>
-            <MenuDrawerhook />
+            <MenuDrawerhook owner={owner} />
           </div>
         </div>
         <div className={styles.orderoption}>
@@ -62,9 +81,12 @@ const Menu = async ({ params }) => {
                     </div>
 
                     <div className={styles.cafsCalienteParent}>
-                      <b className={styles.cafsCaliente}>
+                      <Link
+                        href={`${params.table_no}/category/${menu_category.id}`}
+                        className={styles.cafsCaliente}
+                      >
                         {menu_category.name}
-                      </b>
+                      </Link>
                       <div
                         className={styles.unaCombinacinunaCombinacinContainer}
                       >
@@ -87,9 +109,12 @@ const Menu = async ({ params }) => {
                     </div>
 
                     <div className={styles.cafsCalienteParent}>
-                      <b className={styles.cafsCaliente}>
+                      <Link
+                        href={`${params.table_no}/category/${menu_category.id}`}
+                        className={styles.cafsCaliente}
+                      >
                         {menu_category.name}
-                      </b>
+                      </Link>
                       <div
                         className={styles.unaCombinacinunaCombinacinContainer}
                       >
@@ -118,7 +143,10 @@ const Menu = async ({ params }) => {
             ) {
               return (
                 <div key={index}>
-                  <CatogeryContainer1 category={menu_category} />
+                  <CatogeryContainer1
+                    table_no={params.table_no}
+                    category={menu_category}
+                  />
                 </div>
               );
             }

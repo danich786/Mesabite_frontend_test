@@ -10,7 +10,6 @@ const OrderType = () => {
   const [orderType, setOrderType] = useState("Table");
 
   const continueOrder = (order) => {
-    console.log(order);
     if (order == "Table") {
       router.push("order_type/table_order");
     } else if (order == "Delivery") {

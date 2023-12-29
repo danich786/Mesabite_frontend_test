@@ -1,4 +1,5 @@
 import styles from "./catogery-container1.module.css";
+import Link from "next/link";
 
 const CatogeryContainer1 = (props) => {
   const menu_category = props.category;
@@ -9,11 +10,16 @@ const CatogeryContainer1 = (props) => {
         <img
           className={styles.frappeVirselis1Icon}
           alt=""
-          src={process.env.NEXT_PUBLIC_HOST + menu_category.image}
+          src={menu_category.image}
         />
       </div>
       <div className={styles.cafsCalienteParent}>
-        <b className={styles.cafsCaliente}>{menu_category.name}</b>
+        <Link
+          href={`${props.table_no}/category/${menu_category.id}`}
+          className={styles.cafsCaliente}
+        >
+          {menu_category.name}
+        </Link>
         <div className={styles.unaCombinacinunaCombinacinContainer}>
           <p className={styles.unaCombinacinunaCombinacin}>
             {menu_category.description}

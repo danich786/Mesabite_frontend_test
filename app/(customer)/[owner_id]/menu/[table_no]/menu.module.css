@@ -1,6 +1,7 @@
 .pecatom {
   position: relative;
   line-height: 22px;
+  font-weight: bold;
 }
 .vectorIcon {
   position: relative;
@@ -152,6 +153,7 @@
 .cafsCaliente {
   position: relative;
   text-transform: capitalize;
+  font-weight: bold;
 }
 .unaCombinacinunaCombinacin {
   margin: 0;

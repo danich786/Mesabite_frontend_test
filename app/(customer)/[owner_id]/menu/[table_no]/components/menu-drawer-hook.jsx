@@ -5,7 +5,7 @@ import { useState, useCallback } from "react";
 import MenuDrawer from "./menu-drawer";
 import PortalDrawer from "./portal-drawer";
 
-export default function MenuDrawerhook() {
+export default function MenuDrawerhook(props) {
   const [isMenuDrawerOpen, setMenuDrawerOpen] = useState(false);
 
   const openMenuDrawer = useCallback(() => {
@@ -28,7 +28,7 @@ export default function MenuDrawerhook() {
           placement="Left"
           onOutsideClick={closeMenuDrawer}
         >
-          <MenuDrawer onClose={closeMenuDrawer} />
+          <MenuDrawer onClose={closeMenuDrawer} owner={props.owner} />
         </PortalDrawer>
       )}
     </>

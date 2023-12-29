@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import CrossSign from "./cross-sign";
 import styles from "./menu-drawer.module.css";
 
-const MenuDrawer = ({ onClose }) => {
+const MenuDrawer = ({ onClose, owner }) => {
   useEffect(() => {
     const scrollAnimElements = document.querySelectorAll(
       "[data-animate-on-scroll]"
@@ -57,19 +57,25 @@ const MenuDrawer = ({ onClose }) => {
               <div className={styles.startAGroupOrderWrapper}>
                 <div className={styles.calSmithTarragonaContainer}>
                   <p className={styles.calSmithTarragona}>
+                    {owner.resturant_name}
+                  </p>
+                </div>
+              </div>
+              <div className={styles.startAGroupOrderWrapper}>
+                <div className={styles.calSmithTarragonaContainer}>
+                  <p className={styles.calSmithTarragona}>
                     13 Cal Smith, Tarragona,
                   </p>
-                  <p className={styles.calSmithTarragona}>Spain</p>
                 </div>
               </div>
               <div className={styles.startAGroupOrderWrapper}>
                 <div className={styles.calSmithTarragonaContainer}>
-                  +34 655055929
+                  {owner.phone_no}
                 </div>
               </div>
               <div className={styles.startAGroupOrderWrapper}>
                 <div className={styles.calSmithTarragonaContainer}>
-                  tanjer@gmail.com
+                  {owner.email}
                 </div>
               </div>
             </div>

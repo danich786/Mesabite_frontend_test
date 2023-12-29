@@ -23,6 +23,7 @@
 .cafsCaliente {
   position: relative;
   text-transform: capitalize;
+  font-weight: bold;
 }
 .unaCombinacinunaCombinacin {
   margin: 0;
