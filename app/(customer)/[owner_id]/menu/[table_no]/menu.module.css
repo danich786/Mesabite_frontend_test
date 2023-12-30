@@ -1,3 +1,85 @@
+.image3Icon {
+  position: relative;
+  width: 179px;
+  height: 101px;
+  object-fit: cover;
+}
+.imagefream {
+  align-self: stretch;
+  border-radius: 20px 20px 0 0;
+  width: 179px;
+  height: 101px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+.burger {
+  position: relative;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+.burgerWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.itemdes2 {
+  align-self: stretch;
+  position: relative;
+  font-size: 12px;
+  font-family: Montserrat;
+  text-align: left;
+  overflow: scroll;
+}
+.catogerycontainer2,
+.frameParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.frameParent {
+  align-self: stretch;
+  border-radius: 0 0 10px 10px;
+  background-color: #ffcd00;
+  padding: 5px 10px 10px;
+  gap: 5px;
+  width: 179px;
+  height: 95px;
+}
+.catogerycontainer2 {
+  flex: 1;
+  border-radius: 55px 55px 40px 40px;
+}
+.catogerycontainer2Wrapper,
+.folderscontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.catogerycontainer2Wrapper {
+  width: 179px;
+  height: 196px;
+  flex-shrink: 0;
+  justify-content: flex-start;
+}
+.folderscontainer {
+  position: relative;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #852e2c;
+  font-family: Recoleta;
+}
+/* ########################################################################## */
+
 .pecatom {
   position: relative;
   line-height: 22px;
@@ -69,14 +151,7 @@
   line-height: 34px;
   text-transform: capitalize;
 }
-.frameIcon {
-  position: relative;
-  width: 270px;
-  height: 81px;
-  overflow: hidden;
-  flex-shrink: 0;
-  object-fit: cover;
-}
+
 .titlecontainer {
   align-self: stretch;
   display: flex;
@@ -87,96 +162,7 @@
   font-size: 34px;
   font-family: Recoleta;
 }
-.frappeVirselis1Icon {
-  flex: 1;
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  height: 179px;
-  object-fit: cover;
-}
-.imagefream {
-  align-self: stretch;
-  border-radius: 55px 55px 0 0;
-  height: 179px;
-  overflow: hidden;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  z-index: 0;
-}
 
-.new {
-  border-radius: 55px 55px 40px 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-sizing: border-box;
-  margin: 0 !important;
-  position: absolute;
-  top: 10px;
-  left: 272px;
-  background-color: #ffcd00;
-  box-shadow: 0 5px 5px rgba(255, 205, 0, 0.1);
-  width: 60px;
-  height: 45px;
-  justify-content: center;
-  padding: 0 10px;
-  z-index: 2;
-  font-size: 16px;
-  color: #852e2c;
-}
-
-.featured {
-  border-radius: 55px 55px 40px 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-sizing: border-box;
-  margin: 0 !important;
-  position: absolute;
-  top: 10px;
-  left: 252px;
-  background-color: #ffcd00;
-  box-shadow: 0 5px 5px rgba(255, 205, 0, 0.1);
-  width: 80px;
-  height: 45px;
-  justify-content: center;
-  padding: 0 10px;
-  z-index: 2;
-  font-size: 16px;
-  color: #852e2c;
-}
-
-.cafsCaliente {
-  position: relative;
-  text-transform: capitalize;
-  font-weight: bold;
-}
-.unaCombinacinunaCombinacin {
-  margin: 0;
-}
-.unaCombinacinunaCombinacinContainer {
-  align-self: stretch;
-  position: relative;
-  font-size: 12px;
-  text-transform: capitalize;
-  font-family: Montserrat;
-  text-align: left;
-}
-.cafsCalienteParent {
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 0 20px;
-  gap: 10px;
-  z-index: 1;
-  height: 97px;
-}
 .vectorIcon1 {
   position: absolute;
   height: 100%;
@@ -203,19 +189,7 @@
   z-index: 2;
   font-size: 13px;
 }
-.catogerycontainer2 {
-  border-radius: 55px 55px 40px 40px;
-  background-color: #ffbe9f;
-  width: 339px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 0 0 20px;
-  box-sizing: border-box;
-  position: relative;
-  gap: 10px;
-}
+
 .imagefream1 {
   align-self: stretch;
   border-radius: 55px 55px 0 0;
@@ -248,18 +222,7 @@
   padding: 0 0 20px;
   box-sizing: border-box;
 }
-.catogoriescontainer {
-  align-self: stretch;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 30px;
-  text-align: center;
-  font-size: 22px;
-  font-family: Recoleta;
-}
+
 .menu1 {
   position: relative;
   background-color: #fff6df;

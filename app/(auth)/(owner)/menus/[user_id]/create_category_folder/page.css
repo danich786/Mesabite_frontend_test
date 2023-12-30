@@ -26,8 +26,11 @@
 
 .name-input {
   margin: 10px;
+  width: 90%;
+  background-color: #fbf3db;
   border: 2px solid #ba857a;
   border-radius: 0.5rem;
+  padding: 8px;
 }
 
 .limit {
@@ -57,6 +60,24 @@
   color: #86302d;
   padding-bottom: 20px;
   text-align: center;
+}
+
+.des-text {
+  color: #852e2b;
+  text-align: left;
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.des-box {
+  width: 90%;
+  border: 2px solid #ba857a;
+  border-radius: 0.5rem;
+  margin: 8px;
+  margin-top: 12px;
+  background-color: #fbf3db;
+  padding: 12px;
 }
 
 .cancel-button {

@@ -1,6 +1,6 @@
-import styles from "../../folder/[folder_id]/customer-items-page.module.css";
-import CategoriesSlider from "./components/CategoriesSlider";
-import FilterDrawer from "./components/filters-drawer-hook";
+import styles from "../../customer-items-page.module.css";
+import SliderTop from "./SliderTop";
+import FilterDrawer from "../../components/filters-drawer-hook";
 import Link from "next/link";
 
 const getFolders = async (owner_id) => {
@@ -18,6 +18,28 @@ const getFolders = async (owner_id) => {
     return res.json();
   } catch (error) {
     console.log("Error loading folders: ", error);
+  }
+};
+
+const getMenuCategoriesByFolder = async (owner_id, folder_id) => {
+  try {
+    const res = await fetch(
+      process.env.NEXT_PUBLIC_HOST +
+        "/menus/menu_categories_folder/" +
+        owner_id +
+        "/" +
+        folder_id,
+      {
+        cache: "no-store",
+      }
+    );
+
+    if (!res.ok) {
+      throw new Error("Error while fetching menu categories from the backend");
+    }
+    return res.json();
+  } catch (error) {
+    console.log("Error loading Menu Categories: ", error);
   }
 };
 
@@ -39,10 +61,10 @@ const getMenuCategoryById = async (cat_id) => {
   }
 };
 
-const getMenuItems = async (cat_id) => {
+const getMenuItems = async (category_id) => {
   try {
     const res = await fetch(
-      process.env.NEXT_PUBLIC_HOST + "/menus/menu_items/" + cat_id,
+      process.env.NEXT_PUBLIC_HOST + "/menus/menu_items/" + category_id,
       {
         cache: "no-store",
       }
@@ -56,10 +78,14 @@ const getMenuItems = async (cat_id) => {
   }
 };
 
-// #################################################################################
+// ####################################################################################
 
 const CustomerItemsPage = async ({ params }) => {
   const folders = await getFolders(params.owner_id);
+  const menu_categories = await getMenuCategoriesByFolder(
+    params.owner_id,
+    params.folder_id
+  );
   const selected_category = await getMenuCategoryById(params.cat_id);
   const menu_items = await getMenuItems(params.cat_id);
 
@@ -69,7 +95,7 @@ const CustomerItemsPage = async ({ params }) => {
         <div className={styles.header}>
           <div className={styles.headerContainer}>
             <div className={styles.leftSection}>
-              <Link href="../">
+              <Link href={`/${params.owner_id}/menu/${params.table_no}`}>
                 <img
                   className={styles.backdivIcon}
                   alt=""
@@ -91,12 +117,12 @@ const CustomerItemsPage = async ({ params }) => {
           </div>
         </div>
 
-        <CategoriesSlider
+        <SliderTop
           owner_id={params.owner_id}
-          table_no={params.table_no}
           selected_folder={params.folder_id}
           folders={folders}
-          selected_category={selected_category}
+          selected_category={params.cat_id}
+          categories={menu_categories}
         />
 
         <div className={styles.itemnamediv}>
@@ -152,12 +178,12 @@ const CustomerItemsPage = async ({ params }) => {
                     </div>
                     {menu_item.new_item && (
                       <div className={styles.new}>
-                        <b className={styles.soldouttext}>Sold Out</b>
+                        <b className={styles.soldouttext}>New</b>
                       </div>
                     )}
                     {menu_item.featured && (
                       <div className={styles.featured}>
-                        <b className={styles.soldouttext}>Sold Out</b>
+                        <b className={styles.soldouttext}>featured</b>
                       </div>
                     )}
                   </div>
@@ -171,9 +197,9 @@ const CustomerItemsPage = async ({ params }) => {
                 <div key={index} className={styles.soldoutitemcard}>
                   <div className={styles.soldoutimage}>
                     <img
-                      className={styles.image1Icon}
+                      className={styles.image2Icon}
                       alt=""
-                      src="/frappevirselis-1@2x.png"
+                      src={menu_item.image}
                     />
                   </div>
                   <div className={styles.soldoutitemdetailsbox}>

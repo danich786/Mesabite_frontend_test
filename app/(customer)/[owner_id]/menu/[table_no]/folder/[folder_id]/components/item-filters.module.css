@@ -1,0 +1,134 @@
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.crossbtnIcon,
+.filterbytext {
+  position: relative;
+}
+.crossbtnIcon {
+  width: 10.1px;
+  height: 10.1px;
+  object-fit: cover;
+}
+.header {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 2px 0;
+  gap: 120px;
+}
+.rectangle {
+  align-self: stretch;
+  position: relative;
+  background-color: #acacac;
+  height: 1px;
+}
+.divider {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.path2Icon,
+.roundedboxIcon {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  object-fit: cover;
+  z-index: 0;
+}
+.path2Icon {
+  position: absolute;
+  margin: 0 !important;
+  top: 0.7px;
+  left: 2px;
+  width: 15.7px;
+  height: 13.6px;
+  z-index: 1;
+}
+.checkbox,
+.filterdiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.checkbox {
+  flex-shrink: 0;
+  justify-content: flex-start;
+  position: relative;
+}
+.filterdiv {
+  width: 325px;
+  justify-content: space-between;
+}
+.applytext,
+.filter {
+  font-family: Montserrat;
+}
+.filter {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 20px;
+  font-size: 14px;
+}
+.applytext {
+  position: relative;
+  font-size: 18px;
+  color: #852e2c;
+  text-align: center;
+}
+.applybtn {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.btnLargeLongFillDefa,
+.itemfilters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.btnLargeLongFillDefa {
+  cursor: pointer;
+  border: 0;
+  padding: 2px 20px;
+  background-color: #ffcd00;
+  align-self: stretch;
+  border-radius: 22px 15px 28px 27px;
+  height: 57px;
+}
+.itemfilters {
+  position: relative;
+  background-color: #fff6df;
+  width: 100%;
+  padding: 20px 30px;
+  gap: 20px;
+  opacity: 0;
+  max-height: 90%;
+  overflow: auto;
+  text-align: left;
+  font-size: 20px;
+  color: #852e2c;
+  font-family: Recoleta;
+}
+.itemfilters.animate {
+  animation: 0.25s ease 0s 1 normal forwards slide-in-bottom;
+}

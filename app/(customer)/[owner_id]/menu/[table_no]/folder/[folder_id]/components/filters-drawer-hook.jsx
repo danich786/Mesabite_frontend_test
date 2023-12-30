@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "../../../folder/[folder_id]/customer-items-page.module.css";
+import styles from "../customer-items-page.module.css";
 import { useState, useCallback } from "react";
 import ItemFilters from "./item-filters";
 import PortalDrawer from "./portal-drawer";

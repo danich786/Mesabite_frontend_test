@@ -16,21 +16,27 @@ import { CancelButton, SaveButton } from "@/components/utils/CustomButtons";
 export default function CreateCategoryFolder({ params }) {
   const router = useRouter();
 
-  const defaultValues = {
-    name: "",
-    image: null,
-  };
-
-  const { register, handleSubmit } = useForm({ defaultValues: defaultValues });
+  const [name, setName] = useState("");
 
   const [image, setImage] = useState(null);
 
-  const onSubmit = (data) => {
-    console.log(image);
+  const [description, setDescription] = useState("");
+
+  const defaultValues = {
+    name: "",
+    description: "",
+    image: null,
+  };
+
+  const { handleSubmit } = useForm({ defaultValues: defaultValues });
+
+  const onSubmit = () => {
     AxiosInstance.post("menus/create_category_folder/", {
       user: params.user_id,
-      name: data.name,
+      name: name,
       image: image,
+      description: description,
+      visibility: true,
     }).then((res) => {
       router.push(`../${params.user_id}`);
       router.refresh();
@@ -53,15 +59,16 @@ export default function CreateCategoryFolder({ params }) {
 
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="name-text">Name</div>
-        <div className="name-input">
-          <TextField
-            {...register("name", { required: "Folder name is required" })}
-            sx={{ mb: 1 }}
-            variant="standard"
-            fullWidth
-            InputProps={{ disableUnderline: true }}
-          />
-        </div>
+
+        <input
+          className="name-input"
+          style={{ marginBottom: "4px" }}
+          name="name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          autoComplete="name"
+        />
+
         <div className="limit">0/50</div>
         <div className="image-text">Image (Optional)</div>
         <div className="image-box">
@@ -80,6 +87,7 @@ export default function CreateCategoryFolder({ params }) {
 
           <input
             type="file"
+            name="pic"
             onChange={(event) => {
               if (event.target.files[0]) {
                 if (event.target.files[0].size > 1 * 1000 * 1024) {
@@ -96,7 +104,15 @@ export default function CreateCategoryFolder({ params }) {
           <div className="image-box-text">Click here to uplaod an image</div>
         </div>
 
-        <div style={{ padding: "80px" }}></div>
+        <div className="des-text">Description (Optional)</div>
+        <textarea
+          onChange={(e) => setDescription(e.target.value)}
+          value={description}
+          name="description"
+          cols="40"
+          rows="5"
+          className="des-box"
+        ></textarea>
 
         <Box sx={{ display: "flex", borderTop: "1px solid #c8c4bc" }}>
           <CancelButton href={`../${params.user_id}`} className="cancel-button">

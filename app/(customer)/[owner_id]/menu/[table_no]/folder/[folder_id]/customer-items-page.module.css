@@ -1,3 +1,43 @@
+.new {
+  border-radius: 55px 55px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0 !important;
+  position: absolute;
+  top: 10px;
+  left: 272px;
+  background-color: #ffcd00;
+  width: 60px;
+  height: 45px;
+  justify-content: center;
+  padding: 0 10px;
+  z-index: 2;
+  font-size: 16px;
+  color: #852e2c;
+}
+
+.featured {
+  border-radius: 55px 55px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0 !important;
+  position: absolute;
+  top: 10px;
+  left: 252px;
+  background-color: #ffcc00;
+  width: 80px;
+  height: 45px;
+  justify-content: center;
+  padding: 0 10px;
+  z-index: 2;
+  font-size: 16px;
+  color: #852e2c;
+}
+
 .backdivIcon {
   position: relative;
   width: 25px;
@@ -106,6 +146,7 @@
   border-radius: 22px 15px 28px 27px;
   border: 1px solid #852e2c;
   padding: 14px 20px;
+  font-weight: 600;
 }
 
 .slidercontainer .categories {
@@ -166,9 +207,20 @@
   position: relative;
   max-width: 100%;
   overflow: hidden;
-  height: 211px;
+  height: 179px;
   object-fit: cover;
 }
+.image2Icon {
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 179px;
+  object-fit: cover;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
 .cardimage {
   align-self: stretch;
   border-radius: 55px 55px 0 0;
@@ -199,29 +251,31 @@
 }
 .itemdes2 {
   align-self: stretch;
+  height: 65px;
   position: relative;
-  text-transform: capitalize;
+  overflow: scroll;
 }
 .itemcard,
 .itemdetailsbox {
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
-.itemdetailsbox {
   align-self: stretch;
   align-items: flex-start;
   justify-content: center;
   padding: 0 20px;
 }
+
 .itemcard {
   border-radius: 55px 55px 40px 40px;
   background-color: #ffbe9f;
   width: 339px;
+  height: 320px;
   align-items: center;
   justify-content: flex-start;
   padding: 0 0 20px;
   box-sizing: border-box;
+  position: relative;
 }
 .soldoutimage {
   align-self: stretch;
@@ -268,8 +322,8 @@
 .soldouticon {
   margin: 0 !important;
   position: absolute;
-  top: 0;
-  left: 225px;
+  top: 10px;
+  left: 242px;
   background-color: #ffcd00;
   box-shadow: 0 5px 5px rgba(255, 205, 0, 0.1);
   width: 89px;
@@ -283,6 +337,7 @@
 .soldoutitemcard {
   background-color: #d9d9d9;
   width: 339px;
+  height: 320px;
   justify-content: flex-start;
   padding: 0 0 20px;
   position: relative;

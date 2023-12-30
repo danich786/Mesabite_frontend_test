@@ -58,7 +58,7 @@
 .soldout {
   margin: 0 !important;
   position: absolute;
-  top: 10;
+  top: 10px;
   left: 242px;
   background-color: #ffcd00;
   box-shadow: 0 5px 5px rgba(255, 205, 0, 0.1);
