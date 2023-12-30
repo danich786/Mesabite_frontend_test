@@ -102,7 +102,7 @@ const Menu = async ({ params }) => {
                       <img
                         className={styles.image3Icon}
                         alt=""
-                        src={process.env.NEXT_PUBLIC_HOST + folder.image}
+                        src={folder.image}
                       />
                     )}
                   </div>
