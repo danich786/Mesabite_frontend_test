@@ -90,13 +90,16 @@ const Menu = async ({ params }) => {
           if (folder.visibility) {
             return (
               <div key={index} className={styles.catogerycontainer2Wrapper}>
-                <div className={styles.catogerycontainer2}>
+                <Link
+                  href={`${params.table_no}/folder/${folder.id}`}
+                  className={styles.catogerycontainer2}
+                >
                   <div className={styles.imagefream}>
                     {folder.image == null ? (
                       <img
                         className={styles.image3Icon}
                         alt=""
-                        src="/image-3@2x.png"
+                        src="/default-pic.png"
                       />
                     ) : (
                       <img
@@ -109,16 +112,11 @@ const Menu = async ({ params }) => {
 
                   <div className={styles.frameParent}>
                     <div className={styles.burgerWrapper}>
-                      <Link
-                        href={`${params.table_no}/folder/${folder.id}`}
-                        className={styles.burger}
-                      >
-                        {folder.name}
-                      </Link>
+                      <div className={styles.burger}>{folder.name}</div>
                     </div>
                     <div className={styles.itemdes2}>{folder.description}</div>
                   </div>
-                </div>
+                </Link>
               </div>
             );
           }
@@ -127,29 +125,35 @@ const Menu = async ({ params }) => {
           if (menu_category.folder == null) {
             return (
               <div key={index} className={styles.catogerycontainer2Wrapper}>
-                <div className={styles.catogerycontainer2}>
+                <Link
+                  href={`${params.table_no}/category/${menu_category.id}`}
+                  className={styles.catogerycontainer2}
+                >
                   <div className={styles.imagefream}>
-                    <img
-                      className={styles.image3Icon}
-                      alt=""
-                      src="/image-3@2x.png"
-                    />
+                    {menu_category.image == null ? (
+                      <img
+                        className={styles.image3Icon}
+                        alt=""
+                        src="/default-pic.png"
+                      />
+                    ) : (
+                      <img
+                        className={styles.image3Icon}
+                        alt=""
+                        src={menu_category.image}
+                      />
+                    )}
                   </div>
 
                   <div className={styles.frameParent}>
                     <div className={styles.burgerWrapper}>
-                      <Link
-                        href={`${params.table_no}/category/${menu_category.id}`}
-                        className={styles.burger}
-                      >
-                        {menu_category.name}
-                      </Link>
+                      <div className={styles.burger}>{menu_category.name}</div>
                     </div>
                     <div className={styles.itemdes2}>
                       {menu_category.description}
                     </div>
                   </div>
-                </div>
+                </Link>
               </div>
             );
           }

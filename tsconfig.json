@@ -27,9 +27,10 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "app/(auth)/(owner)/menus/[user_id]/adds_on/page.jsx",
-    "app/(auth)/(owner)/menus/[user_id]/availability/page.jsx",
-    "components/common/Footer.jsx"
+    "app/(owner)/(dashboard)/menus/[user_id]/adds_on/page.jsx",
+    "app/(owner)/(dashboard)/menus/[user_id]/availability/page.jsx",
+    "components/common/Footer.jsx",
+    "app/(owner)/(dashboard)/orders/page.jsx"
   ],
   "exclude": ["node_modules"]
 }

@@ -209,10 +209,12 @@
   overflow: hidden;
   height: 179px;
   object-fit: cover;
+  background-color: #dfdede;
 }
 .image2Icon {
   flex: 1;
   position: relative;
+  background-color: #dfdede;
   max-width: 100%;
   overflow: hidden;
   height: 179px;
@@ -246,31 +248,62 @@
   text-align: center;
   display: inline-block;
 }
-.unaCombinacinunaCombinacin {
-  margin: 0;
-}
+
 .itemdes2 {
   align-self: stretch;
-  height: 65px;
   position: relative;
-  overflow: scroll;
+  font-size: 12px;
+  text-transform: capitalize;
+  font-family: Montserrat;
+  text-align: left;
 }
 .itemcard,
 .itemdetailsbox {
+  align-self: stretch;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  align-self: stretch;
   align-items: flex-start;
   justify-content: center;
   padding: 0 20px;
+  gap: 10px;
+  z-index: 1;
+}
+
+.b,
+.cafsCaliente,
+.eur {
+  position: relative;
+}
+.eur {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.cafsCalienteParent,
+.parent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.parent {
+  flex-shrink: 0;
+  justify-content: center;
+  gap: 10px;
+  text-align: left;
+  font-size: 18px;
+  color: #bf5627;
+  font-family: Montserrat;
+}
+
+.cafsCalienteParent {
+  align-self: stretch;
+  justify-content: space-between;
 }
 
 .itemcard {
   border-radius: 55px 55px 40px 40px;
   background-color: #ffbe9f;
   width: 339px;
-  height: 320px;
   align-items: center;
   justify-content: flex-start;
   padding: 0 0 20px;
@@ -334,10 +367,23 @@
   font-size: 16px;
   color: #852e2c;
 }
+
+.soldoutpriceparent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-shrink: 0;
+  justify-content: center;
+  gap: 10px;
+  text-align: left;
+  font-size: 18px;
+  color: #a9a9a9;
+  font-family: Montserrat;
+}
+
 .soldoutitemcard {
   background-color: #d9d9d9;
   width: 339px;
-  height: 320px;
   justify-content: flex-start;
   padding: 0 0 20px;
   position: relative;

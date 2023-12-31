@@ -3,6 +3,7 @@
   width: 179px;
   height: 101px;
   object-fit: cover;
+  background-color: #dfdede;
 }
 .imagefream {
   align-self: stretch;
@@ -49,7 +50,6 @@
   padding: 5px 10px 10px;
   gap: 5px;
   width: 179px;
-  height: 95px;
 }
 .catogerycontainer2 {
   flex: 1;

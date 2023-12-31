@@ -138,20 +138,30 @@ const CustomerItemsPage = async ({ params }) => {
                 return (
                   <div key={index} className={styles.itemcard}>
                     <div className={styles.cardimage}>
-                      <img
-                        className={styles.image1Icon}
-                        alt=""
-                        src={menu_item.image}
-                      />
+                      {menu_item.image == null ? (
+                        <img
+                          className={styles.image1Icon}
+                          alt=""
+                          src="/default-pic.png"
+                        />
+                      ) : (
+                        <img
+                          className={styles.image1Icon}
+                          alt=""
+                          src={menu_item.image}
+                        />
+                      )}
                     </div>
                     <div className={styles.itemdetailsbox}>
-                      <button className={styles.itemname21}>
-                        {menu_item.name}
-                      </button>
+                      <div className={styles.cafsCalienteParent}>
+                        <b className={styles.itemname21}>{menu_item.name}</b>
+                        <div className={styles.parent}>
+                          <b className={styles.b}>{menu_item.price}</b>
+                          <b className={styles.eur}>EUR</b>
+                        </div>
+                      </div>
                       <div className={styles.itemdes2}>
-                        <p className={styles.unaCombinacinunaCombinacin}>
-                          {menu_item.description}
-                        </p>
+                        {menu_item.description}
                       </div>
                     </div>
                   </div>
@@ -160,22 +170,34 @@ const CustomerItemsPage = async ({ params }) => {
                 return (
                   <div key={index} className={styles.itemcard}>
                     <div className={styles.cardimage}>
-                      <img
-                        className={styles.image1Icon}
-                        alt=""
-                        src={menu_item.image}
-                      />
+                      {menu_item.image == null ? (
+                        <img
+                          className={styles.image1Icon}
+                          alt=""
+                          src="/default-pic.png"
+                        />
+                      ) : (
+                        <img
+                          className={styles.image1Icon}
+                          alt=""
+                          src={menu_item.image}
+                        />
+                      )}
                     </div>
+
                     <div className={styles.itemdetailsbox}>
-                      <button className={styles.itemname21}>
-                        {menu_item.name}
-                      </button>
+                      <div className={styles.cafsCalienteParent}>
+                        <b className={styles.itemname21}>{menu_item.name}</b>
+                        <div className={styles.parent}>
+                          <b className={styles.b}>{menu_item.price}</b>
+                          <b className={styles.eur}>EUR</b>
+                        </div>
+                      </div>
                       <div className={styles.itemdes2}>
-                        <p className={styles.unaCombinacinunaCombinacin}>
-                          {menu_item.description}
-                        </p>
+                        {menu_item.description}
                       </div>
                     </div>
+
                     {menu_item.new_item && (
                       <div className={styles.new}>
                         <b className={styles.soldouttext}>New</b>
@@ -196,20 +218,34 @@ const CustomerItemsPage = async ({ params }) => {
               return (
                 <div key={index} className={styles.soldoutitemcard}>
                   <div className={styles.soldoutimage}>
-                    <img
-                      className={styles.image2Icon}
-                      alt=""
-                      src={menu_item.image}
-                    />
+                    {menu_item.image == null ? (
+                      <img
+                        className={styles.image2Icon}
+                        alt=""
+                        src="/default-pic.png"
+                      />
+                    ) : (
+                      <img
+                        className={styles.image2Icon}
+                        alt=""
+                        src={menu_item.image}
+                      />
+                    )}
                   </div>
+
                   <div className={styles.soldoutitemdetailsbox}>
-                    <b className={styles.soldouttext}>{menu_item.name}</b>
+                    <div className={styles.cafsCalienteParent}>
+                      <b className={styles.soldouttext}>{menu_item.name}</b>
+                      <div className={styles.soldoutpriceparent}>
+                        <b className={styles.b}>{menu_item.price}</b>
+                        <b className={styles.eur}>EUR</b>
+                      </div>
+                    </div>
                     <div className={styles.itemdes3}>
-                      <p className={styles.unaCombinacinunaCombinacin}>
-                        {menu_item.description}
-                      </p>
+                      {menu_item.description}
                     </div>
                   </div>
+
                   <div className={styles.soldouticon}>
                     <b className={styles.soldouttext}>Sold Out</b>
                   </div>

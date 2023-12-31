@@ -1,7 +1,7 @@
 "use client";
 
-import React from "react";
 import "./orders.css";
+import { useState, useEffect } from "react";
 import { useRetrieveUserQuery } from "@/redux/features/authApiSlice";
 
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
@@ -10,13 +10,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 
-interface TabPanelProps {
-  children?: React.ReactNode;
-  index: number;
-  value: number;
-}
-
-function CustomTabPanel(props: TabPanelProps) {
+function CustomTabPanel(props) {
   const { children, index, value, ...other } = props;
 
   return (
@@ -32,7 +26,7 @@ function CustomTabPanel(props: TabPanelProps) {
   );
 }
 
-function a11yProps(index: number) {
+function a11yProps(index) {
   return {
     id: `simple-tab-${index}`,
     "aria-controls": `simple-tabpanel-${index}`,
@@ -40,16 +34,16 @@ function a11yProps(index: number) {
 }
 
 const Orders = () => {
-  const [isClient, setIsClient] = React.useState(false);
+  const [isClient, setIsClient] = useState(false);
   const { data: user } = useRetrieveUserQuery();
   // console.log(user);
 
-  React.useEffect(() => {
+  useEffect(() => {
     setIsClient(true);
   }, []);
 
-  const [value, setValue] = React.useState(0);
-  const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+  const [value, setValue] = useState(0);
+  const handleChange = (newValue) => {
     setValue(newValue);
   };
 
