@@ -1,4 +1,4 @@
-import SettingsMenuItemForm from "@/components/forms/SettingsMenuItemForm";
+import SettingsMenuItemForm from "./SettingsMenuItemForm";
 
 const getMenuItemById = async (id) => {
   try {

@@ -105,13 +105,24 @@ export default function EditMenuItemForm(props) {
     <div className="main">
       <div className="text-top">
         <Link
-          href="/menus"
-          style={{ textDecoration: "none", color: "#852e2b" }}
+          href={`/menus/${props.user_id}`}
+          style={{
+            textDecoration: "none",
+            color: "#852e2b",
+            fontWeight: "600",
+          }}
         >
           Menu
         </Link>
         <ChevronRightIcon />
-        <Link href="../" style={{ textDecoration: "none", color: "#852e2b" }}>
+        <Link
+          href="../"
+          style={{
+            textDecoration: "none",
+            color: "#852e2b",
+            fontWeight: "600",
+          }}
+        >
           {props.menu_cat_name}
         </Link>
         <ChevronRightIcon /> Edit {props.name}

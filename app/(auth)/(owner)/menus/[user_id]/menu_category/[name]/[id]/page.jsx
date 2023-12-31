@@ -49,13 +49,19 @@ export default async function MenuCategoryDetails({ params }) {
       <div className="text-top">
         <Link
           href="../../"
-          style={{ textDecoration: "none", color: "#852e2b" }}
+          style={{
+            textDecoration: "none",
+            color: "#852e2b",
+            fontWeight: "600",
+          }}
         >
           Menu
         </Link>
         <ChevronRightIcon /> {cat_name}
       </div>
-      <ItemButton className="menu-btn">{cat_name}</ItemButton>
+
+      <div className="menu-btn">{cat_name}</div>
+
       <div className="cat-icons">
         <div className="menu-text">{cat_name}</div>
         <div>

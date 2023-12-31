@@ -149,7 +149,11 @@ const Menus = async ({ params }) => {
                         >
                           <Link
                             href={`${params.user_id}/menu_category/${menu_category.name}/${menu_category.id}`}
-                            style={{ textDecoration: "none", color: "white" }}
+                            style={{
+                              textDecoration: "none",
+                              color: "white",
+                              fontWeight: "bold",
+                            }}
                           >
                             {menu_category.name}
                           </Link>
@@ -213,16 +217,18 @@ const Menus = async ({ params }) => {
                     </div>
                   </div>
                   <div style={{ marginTop: "-10px" }}>
-                    <div
+                    <Link
+                      href={`${params.user_id}/menu_category/${menu_category.name}/${menu_category.id}`}
                       style={{
                         fontSize: "22px",
                         color: "white",
                         textAlign: "left",
                         marginLeft: "10px",
+                        fontWeight: "bold",
                       }}
                     >
                       {menu_category.name}
-                    </div>
+                    </Link>
                     <div
                       style={{
                         color: "white",

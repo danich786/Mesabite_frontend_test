@@ -1,4 +1,4 @@
-import EditMenuItemForm from "@/components/forms/EditMenuItemForm";
+import EditMenuItemForm from "./EditMenuItemForm";
 
 const getMenuItemById = async (id) => {
   try {
@@ -23,6 +23,7 @@ export default async function EditItem({ params }) {
   return (
     <EditMenuItemForm
       menu_cat={menu_item.menu_category}
+      user_id={params.user_id}
       menu_cat_name={params.name}
       item_id={params.item_id}
       image={menu_item.image}
