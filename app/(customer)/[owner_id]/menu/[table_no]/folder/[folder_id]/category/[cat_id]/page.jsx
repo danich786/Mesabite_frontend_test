@@ -136,7 +136,11 @@ const CustomerItemsPage = async ({ params }) => {
             if (menu_item.availability == "A") {
               if (!menu_item.new_item && !menu_item.featured) {
                 return (
-                  <div key={index} className={styles.itemcard}>
+                  <Link
+                    key={index}
+                    href={`${params.cat_id}/item/${menu_item.id}`}
+                    className={styles.itemcard}
+                  >
                     <div className={styles.cardimage}>
                       {menu_item.image == null ? (
                         <img
@@ -164,11 +168,15 @@ const CustomerItemsPage = async ({ params }) => {
                         {menu_item.description}
                       </div>
                     </div>
-                  </div>
+                  </Link>
                 );
               } else if (menu_item.new_item || menu_item.featured) {
                 return (
-                  <div key={index} className={styles.itemcard}>
+                  <Link
+                    key={index}
+                    href={`${params.cat_id}/item/${menu_item.id}`}
+                    className={styles.itemcard}
+                  >
                     <div className={styles.cardimage}>
                       {menu_item.image == null ? (
                         <img
@@ -208,7 +216,7 @@ const CustomerItemsPage = async ({ params }) => {
                         <b className={styles.soldouttext}>featured</b>
                       </div>
                     )}
-                  </div>
+                  </Link>
                 );
               }
             } else if (
@@ -216,7 +224,11 @@ const CustomerItemsPage = async ({ params }) => {
               menu_item.availability == "X"
             ) {
               return (
-                <div key={index} className={styles.soldoutitemcard}>
+                <Link
+                  key={index}
+                  href={`${params.cat_id}/item/${menu_item.id}`}
+                  className={styles.soldoutitemcard}
+                >
                   <div className={styles.soldoutimage}>
                     {menu_item.image == null ? (
                       <img
@@ -249,7 +261,7 @@ const CustomerItemsPage = async ({ params }) => {
                   <div className={styles.soldouticon}>
                     <b className={styles.soldouttext}>Sold Out</b>
                   </div>
-                </div>
+                </Link>
               );
             }
           })}
