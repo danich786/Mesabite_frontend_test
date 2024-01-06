@@ -1,24 +1,34 @@
 "use client";
 
 import styles from "./itemdetails.module.css";
-
-import { CartContext } from "./CartContext";
+import { CartContext } from "../../../../../../CartContext";
+import { TempCartContext } from "./TempCartContext";
 import { useContext } from "react";
+import { useRouter } from "next/navigation";
 
 export default function AddToCartBtn(props) {
+  const router = useRouter();
   const menu_item = props.menu_item;
 
   const cart = useContext(CartContext);
 
-  const MenuItemsCount = cart.MenuItems.reduce(
-    (sum, menu_item) => sum + menu_item.quantity,
-    0
-  );
+  const temp_cart = useContext(TempCartContext);
 
-  const total_price = cart.getTotalCost(menu_item.price).toFixed(2);
+  // const MenuItemsCount = cart.MenuItems.reduce(
+  //   (sum, menu_item) => sum + menu_item.quantity,
+  //   0
+  // );
+
+  const total_price = temp_cart.getTempCartTotalCost().toFixed(1);
 
   return (
-    <button className={styles.addtocartbtn}>
+    <button
+      onClick={() => {
+        router.push("../checkout");
+        cart.addToCartBtn(temp_cart.TempMenuItems, temp_cart.TempAddOns);
+      }}
+      className={styles.addtocartbtn}
+    >
       <div className={styles.btntextbox}>
         <div className={styles.btnrighttextbox}>
           <img

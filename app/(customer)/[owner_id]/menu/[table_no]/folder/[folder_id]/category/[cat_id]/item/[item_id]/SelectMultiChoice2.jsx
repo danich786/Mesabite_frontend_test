@@ -3,13 +3,13 @@
 import styles from "./itemdetails.module.css";
 
 import { useState, useContext } from "react";
-import { CartContext } from "./CartContext";
+import { TempCartContext } from "./TempCartContext";
 
 export default function SelectMultiChoice2(props) {
   const add_ons_group = props.add_ons_group;
   const add_ons_choice = props.add_ons_choice;
 
-  const cart = useContext(CartContext);
+  const temp_cart = useContext(TempCartContext);
 
   const [selected, setSelected] = useState(add_ons_choice.pre_select);
 
@@ -24,12 +24,14 @@ export default function SelectMultiChoice2(props) {
             onChange={() => {
               setSelected(!selected);
               !selected
-                ? cart.addAddOnToCart(
+                ? temp_cart.addAddOnToTempCart(
                     add_ons_choice.id,
+                    add_ons_choice.name,
                     add_ons_choice.price,
-                    add_ons_group.group_type
+                    add_ons_group.group_type,
+                    add_ons_group.menu_item
                   )
-                : cart.removeAddOnFromCart(add_ons_choice.id);
+                : temp_cart.removeAddOnFromTempCart(add_ons_choice.id);
             }}
             checked={selected}
           />

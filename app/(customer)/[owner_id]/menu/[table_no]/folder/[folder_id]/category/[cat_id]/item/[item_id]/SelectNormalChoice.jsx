@@ -2,14 +2,14 @@
 
 import styles from "./itemdetails.module.css";
 
-import { useState, useContext } from "react";
-import { CartContext } from "./CartContext";
+import { useState, useEffect, useContext } from "react";
+import { TempCartContext } from "./TempCartContext";
 
 export default function SelectNormalChoice(props) {
   const add_ons_group = props.add_ons_group;
   const add_ons_choices = props.add_ons_choices;
 
-  const cart = useContext(CartContext);
+  const temp_cart = useContext(TempCartContext);
 
   let pre_selected_choice = null;
 
@@ -18,6 +18,17 @@ export default function SelectNormalChoice(props) {
       pre_selected_choice = add_ons_choice;
     }
   });
+
+  useEffect(() => {
+    temp_cart.addPreSelectedAddOnToTempCart(
+      pre_selected_choice.id,
+      pre_selected_choice.name,
+      pre_selected_choice.price,
+      add_ons_group.group_type,
+      add_ons_group.menu_item,
+      add_ons_group.id
+    );
+  }, []);
 
   const [selected_choice, setSelectedChoice] = useState(pre_selected_choice);
 
@@ -46,17 +57,22 @@ export default function SelectNormalChoice(props) {
       </div>
 
       <div className={styles.groupchoicesslider}>
+        {/*  */}
         {add_ons_choices.map((add_ons_choice, index) => {
           return (
             <button
               onClick={() => {
-                setSelectedChoice(add_ons_choice);
-                cart.addAddOnToCart(
-                  add_ons_choice.id,
-                  add_ons_choice.price,
-                  add_ons_group.group_type,
-                  add_ons_group.id
-                );
+                if (selected_choice != add_ons_choice) {
+                  setSelectedChoice(add_ons_choice);
+                  temp_cart.addAddOnToTempCart(
+                    add_ons_choice.id,
+                    add_ons_choice.name,
+                    add_ons_choice.price,
+                    add_ons_group.group_type,
+                    add_ons_group.menu_item,
+                    add_ons_group.id
+                  );
+                }
               }}
               key={index}
               className={styles.choice2}

@@ -1,6 +1,7 @@
 import styles from "./menu.module.css";
 import MenuDrawerhook from "./components/menu-drawer-hook";
 import CatogeryContainer1 from "./components/catogery-container1";
+import CartSlider from "./CartSlider";
 import Link from "next/link";
 
 const getResturantOwner = async (owner_id) => {
@@ -160,92 +161,7 @@ const Menu = async ({ params }) => {
         })}
       </div>
 
-      {/* <div className={styles.catogoriescontainer}>
-          {menu_categories.map((menu_category, index) => {
-            if (menu_category.availability == "A") {
-              if (!menu_category.new_cat && !menu_category.featured) {
-                return (
-                  <div key={index} className={styles.catogerycontainer2}>
-                    <div className={styles.imagefream}>
-                      <img
-                        className={styles.frappeVirselis1Icon}
-                        alt=""
-                        src={menu_category.image}
-                      />
-                    </div>
-
-                    <div className={styles.cafsCalienteParent}>
-                      <Link
-                        href={`${params.table_no}/category/${menu_category.id}`}
-                        className={styles.cafsCaliente}
-                      >
-                        {menu_category.name}
-                      </Link>
-                      <div
-                        className={styles.unaCombinacinunaCombinacinContainer}
-                      >
-                        <p className={styles.unaCombinacinunaCombinacin}>
-                          {menu_category.description}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                );
-              } else if (menu_category.new_cat || menu_category.featured) {
-                return (
-                  <div key={index} className={styles.catogerycontainer2}>
-                    <div className={styles.imagefream}>
-                      <img
-                        className={styles.frappeVirselis1Icon}
-                        alt=""
-                        src={menu_category.image}
-                      />
-                    </div>
-
-                    <div className={styles.cafsCalienteParent}>
-                      <Link
-                        href={`${params.table_no}/category/${menu_category.id}`}
-                        className={styles.cafsCaliente}
-                      >
-                        {menu_category.name}
-                      </Link>
-                      <div
-                        className={styles.unaCombinacinunaCombinacinContainer}
-                      >
-                        <p className={styles.unaCombinacinunaCombinacin}>
-                          {menu_category.description}
-                        </p>
-                      </div>
-                    </div>
-
-                    {menu_category.new_cat && (
-                      <div className={styles.new}>
-                        <b className={styles.cafsCaliente}>New</b>
-                      </div>
-                    )}
-                    {menu_category.featured && (
-                      <div className={styles.featured}>
-                        <b className={styles.cafsCaliente}>Featured</b>
-                      </div>
-                    )}
-                  </div>
-                );
-              }
-            } else if (
-              menu_category.availability == "S" ||
-              menu_category.availability == "X"
-            ) {
-              return (
-                <div key={index}>
-                  <CatogeryContainer1
-                    table_no={params.table_no}
-                    category={menu_category}
-                  />
-                </div>
-              );
-            }
-          })}
-        </div> */}
+      <CartSlider table_no={params.table_no} />
     </div>
   );
 };

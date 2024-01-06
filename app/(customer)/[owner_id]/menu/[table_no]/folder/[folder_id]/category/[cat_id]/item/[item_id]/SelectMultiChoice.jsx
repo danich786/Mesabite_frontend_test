@@ -4,17 +4,17 @@ import styles from "./itemdetails.module.css";
 
 import SelectMultiChoice2 from "./SelectMultiChoice2";
 
-import { useState, useContext } from "react";
-import { CartContext } from "./CartContext";
+import { useContext } from "react";
+import { TempCartContext } from "./TempCartContext";
 
 export default function SelectMultiChoice(props) {
   const add_ons_group = props.add_ons_group;
   const add_ons_choices = props.add_ons_choices;
 
-  const cart = useContext(CartContext);
+  const temp_cart = useContext(TempCartContext);
 
-  let multi_addons_price = cart
-    .getAddOnsCost(add_ons_group.group_type)
+  let multi_addons_price = temp_cart
+    .getTempAddOnsCost(add_ons_group.group_type)
     .toFixed(1);
 
   return (

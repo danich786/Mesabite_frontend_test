@@ -1,5 +1,6 @@
 import styles from "../../customer-items-page.module.css";
 import SliderTop from "./SliderTop";
+import CartSlider from "./CartSlider";
 import FilterDrawer from "../../components/filters-drawer-hook";
 import Link from "next/link";
 
@@ -266,6 +267,7 @@ const CustomerItemsPage = async ({ params }) => {
             }
           })}
         </div>
+        <CartSlider cat_id={params.cat_id} />
       </div>
     </>
   );

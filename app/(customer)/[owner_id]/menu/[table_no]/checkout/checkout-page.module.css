@@ -1,0 +1,572 @@
+.placingThisOrder {
+  position: relative;
+}
+.notificationsection {
+  align-self: stretch;
+  background-color: #0a8042;
+  box-shadow: 4px 9px 6px rgba(191, 86, 39, 0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 8px 30px;
+  color: #fff6df;
+}
+.backarrowframeIcon {
+  position: relative;
+  width: 9px;
+  height: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+.backbuttongroup {
+  height: 17.1px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 0.06999969482421875px 20px;
+  box-sizing: border-box;
+  gap: 10px;
+}
+.carttext {
+  position: relative;
+  text-transform: capitalize;
+}
+.iconsgroup {
+  position: relative;
+  width: 209.6px;
+  height: 120.6px;
+  object-fit: cover;
+}
+.iconbox {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 20px;
+  gap: 8px;
+}
+.locationicon {
+  position: relative;
+  width: 12.2px;
+  height: 19.7px;
+  object-fit: cover;
+}
+.tableordertext1 {
+  position: relative;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.tablenotext {
+  position: relative;
+  font-size: 13px;
+  font-weight: 500;
+  color: #bf5627;
+  display: inline-block;
+  width: 108px;
+}
+.textbox {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+.detailsbox,
+.tableordertext,
+.textbox,
+.topcontainer {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 20px;
+}
+.tableordertext {
+  flex-direction: row;
+  align-items: center;
+  padding: 0 20px;
+  gap: 11px;
+  font-size: 14px;
+  font-family: Montserrat;
+}
+.detailsbox,
+.topcontainer {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.detailsbox {
+  text-align: left;
+  font-size: 34px;
+  font-family: Recoleta;
+}
+.topcontainer {
+  text-align: center;
+  font-size: 14px;
+}
+.itemsnotext,
+.itemstext {
+  position: absolute;
+  top: 0;
+  font-weight: 500;
+}
+.itemsnotext {
+  left: 0;
+  display: inline-block;
+  width: 7px;
+}
+.itemstext {
+  left: 10px;
+}
+.itemsnogroup {
+  position: relative;
+  width: 45px;
+  height: 15px;
+  font-size: 12px;
+  color: #bf5627;
+  font-family: Montserrat;
+}
+.yourordersection2 {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 210px;
+}
+.yourordersection {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.image1Icon {
+  position: relative;
+  border-radius: 10px 20px 15px 28px;
+  width: 72px;
+  height: 55px;
+  object-fit: cover;
+}
+.itemimagebox {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.itemname {
+  position: relative;
+  text-transform: capitalize;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+.medium {
+  margin: 0;
+}
+.addonstext {
+  position: relative;
+  font-size: 13px;
+}
+.itemsnamediv {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.currency {
+  position: relative;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.pricediv {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+}
+.cancelbtnIcon {
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.addbtnIcon,
+.addedquantity,
+.cancelbtnIcon {
+  position: relative;
+  flex-shrink: 0;
+}
+.addedquantity {
+  display: inline-block;
+  width: 5px;
+}
+.addbtnIcon {
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.optionsdiv {
+  flex-shrink: 0;
+  flex-direction: row;
+  justify-content: center;
+  gap: 19px;
+  font-size: 14px;
+  color: #852e2c;
+}
+.itemsdetailsdiv,
+.optionsbox,
+.optionsdiv {
+  display: flex;
+  align-items: center;
+}
+.optionsbox {
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 23px;
+  font-size: 16px;
+  color: #bf5627;
+}
+.itemsdetailsdiv {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.divider {
+  align-self: stretch;
+  position: relative;
+  background-color: rgba(133, 46, 44, 0.2);
+  height: 1px;
+}
+.itemsdetailsbox {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 19px;
+}
+.btnicon {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.additmestext {
+  position: relative;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: Montserrat;
+  color: #852e2c;
+  text-align: left;
+}
+.additembtn {
+  cursor: pointer;
+  border: 0;
+  padding: 10px;
+  background-color: #ffcd00;
+  border-radius: 15px 15px 24px 27px;
+  box-shadow: 0 5px 5px rgba(215, 200, 160, 0.35);
+  width: 103px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.cartitems {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 20px;
+  font-size: 14px;
+  font-family: Montserrat;
+}
+.commentstext {
+  position: relative;
+  line-height: 18px;
+}
+.commentsbox,
+.commentsinput {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.commentsinput {
+  border: 1px solid #852e2c;
+  outline: 0;
+  background-color: transparent;
+  border-radius: 22px 15px 28px 27px;
+  align-items: center;
+  padding: 15px 25px 16px 20px;
+  color: #852e2c;
+}
+.commentsbox {
+  height: 99px;
+  align-items: flex-start;
+  gap: 20px;
+  color: #8e0c4a;
+}
+.frappeVirselis1Icon {
+  position: relative;
+  width: 165px;
+  height: 105px;
+  object-fit: cover;
+}
+.imagefream {
+  border-radius: 55px 55px 0 0;
+  height: 105px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+.eur,
+.frameIcon {
+  position: relative;
+}
+.eur {
+  font-size: 18px;
+  font-family: Montserrat;
+  color: #bf5627;
+}
+.frameIcon {
+  width: 25px;
+  height: 18px;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.item {
+  border-radius: 22px 15px 28px 27px;
+  background-color: #852e2c;
+  height: 45px;
+  flex-direction: row;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  gap: 5px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff6df;
+  font-family: Recoleta;
+}
+.item,
+.relateditem,
+.relateditemsdiv {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.relateditem {
+  border-radius: 55px 55px 40px 40px;
+  background-color: #ffbe9f;
+  flex-shrink: 0;
+  flex-direction: column;
+  padding: 0 0 10px;
+  gap: 10px;
+}
+.relateditemsdiv {
+  width: 503px;
+  flex-direction: row;
+  gap: 20px;
+  font-size: 14px;
+  font-family: Inter;
+}
+.relateditemsbox {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+.totalprice {
+  position: relative;
+  color: #bf5627;
+  text-align: right;
+}
+.totaldiv {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 216px;
+}
+.taxprice,
+.taxtext {
+  position: absolute;
+  top: 0;
+}
+.taxprice {
+  left: 0;
+  font-weight: 500;
+}
+.taxtext {
+  left: 287px;
+  font-size: 14px;
+  color: #bf5627;
+  text-align: right;
+}
+.taxdiv {
+  position: relative;
+  width: 331px;
+  height: 18px;
+  font-size: 15px;
+}
+.priceandtaxbox,
+.priceandtaxdiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 18px;
+}
+.priceandtaxbox {
+  width: 389px;
+  align-items: center;
+  gap: 23px;
+  font-family: Montserrat;
+}
+.totalmaintext {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  flex-shrink: 0;
+}
+.totalmainprice {
+  position: relative;
+  font-family: Montserrat;
+  color: #bf5627;
+  text-align: right;
+}
+.orderdetailscontainer2,
+.totalmainbox,
+.totalmaindiv {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 219px;
+}
+.orderdetailscontainer2,
+.totalmainbox {
+  width: 389px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.orderdetailscontainer2 {
+  width: 376px;
+  gap: 20px;
+}
+.checkouticon {
+  position: relative;
+  width: 33px;
+  height: 24px;
+  object-fit: cover;
+}
+.checkouttext {
+  position: relative;
+  font-size: 18px;
+  font-family: Recoleta;
+  color: #852e2c;
+  text-align: left;
+}
+.leftdiv {
+  width: 142px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.currencytext,
+.pricetext,
+.totaltext1 {
+  position: relative;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-family: Montserrat;
+  color: #852e2c;
+  text-align: left;
+}
+.currencytext,
+.pricetext {
+  font-size: 14px;
+  color: #bf5627;
+}
+.currencytext {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.rightdiv {
+  width: 114px;
+  flex-shrink: 0;
+}
+.btnbox,
+.checkoutbtn,
+.rightdiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.btnbox {
+  flex: 1;
+}
+.checkoutbtn {
+  cursor: pointer;
+  border: 0;
+  padding: 2px 40px;
+  background-color: #ffcd00;
+  align-self: stretch;
+  border-radius: 22px 15px 28px 27px;
+  box-shadow: 0 5px 5px rgba(215, 200, 160, 0.48);
+  height: 60px;
+  box-sizing: border-box;
+}
+.checkoutpage,
+.orderdetailscontainer {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.orderdetailscontainer {
+  border-radius: 25px 25px 0 0;
+  background-color: #fff6df;
+  justify-content: center;
+  padding: 25px 20px 40px;
+  box-sizing: border-box;
+  max-width: 400px;
+  font-size: 18px;
+  font-family: Recoleta;
+}
+.checkoutpage {
+  position: relative;
+  background-color: #f3cfb2;
+  width: 100%;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: 12px;
+  color: #852e2c;
+  font-family: Montserrat;
+}

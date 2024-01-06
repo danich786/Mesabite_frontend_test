@@ -1,7 +1,7 @@
 "use client";
 
-import CartProvider from "./CartContext";
+import TempCartProvider from "./TempCartContext";
 
-export default function ItemPageLayout({ children }) {
-  return <CartProvider>{children}</CartProvider>;
+export default function ItemsPageLayout({ children }) {
+  return <TempCartProvider>{children}</TempCartProvider>;
 }

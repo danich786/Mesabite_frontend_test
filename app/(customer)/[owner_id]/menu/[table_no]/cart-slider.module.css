@@ -1,0 +1,84 @@
+.div {
+  position: relative;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: Montserrat;
+  color: #852e2c;
+  text-align: center;
+}
+.items1container {
+  border-radius: 55px 55px 40px 40px;
+  border: 1px solid #852e2c;
+  box-sizing: border-box;
+  width: 29px;
+  height: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.addtocarttext {
+  position: relative;
+  font-size: 18px;
+  font-family: Recoleta;
+  color: #852e2c;
+  text-align: left;
+}
+.btnrighttextbox {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.btncurrencytext,
+.btnpricetext,
+.btntotaltext {
+  position: relative;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-family: Montserrat;
+  color: #852e2c;
+  text-align: left;
+}
+.btncurrencytext,
+.btnpricetext {
+  font-size: 14px;
+  color: #bf5627;
+}
+.btncurrencytext {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.btnpricetotal {
+  width: 114px;
+  flex-shrink: 0;
+}
+.addtocartbtn,
+.btnpricetotal,
+.btntextbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.btntextbox {
+  flex: 1;
+}
+.addtocartbtn {
+  cursor: pointer;
+  border: 0;
+  padding: 10px 15px;
+  background-color: #ffcd00;
+  margin: 0 !important;
+  position: fixed;
+  bottom: 20px;
+  left: calc(50% - 173.5px);
+  border-radius: 22px 15px 28px 27px;
+  box-shadow: 0 5px 5px rgba(215, 200, 160, 0.3);
+  width: 349px;
+  height: 60px;
+  box-sizing: border-box;
+  z-index: 5;
+}

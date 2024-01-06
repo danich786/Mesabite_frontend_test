@@ -2,7 +2,7 @@
 
 import styles from "./itemdetails.module.css";
 
-import { CartContext } from "./CartContext";
+import { TempCartContext } from "./TempCartContext";
 import { useContext } from "react";
 
 // #################################
@@ -11,10 +11,10 @@ export default function SelectExtraChoice(props) {
   const add_ons_group = props.add_ons_group;
   const add_ons_choices = props.add_ons_choices;
 
-  const cart = useContext(CartContext);
+  const temp_cart = useContext(TempCartContext);
 
-  let extra_addons_price = cart
-    .getAddOnsCost(add_ons_group.group_type)
+  let extra_addons_price = temp_cart
+    .getTempAddOnsCost(add_ons_group.group_type)
     .toFixed(1);
 
   return (
@@ -37,7 +37,7 @@ export default function SelectExtraChoice(props) {
       </div>
 
       {add_ons_choices.map((add_ons_choice, index) => {
-        const AddOnQuantity = cart.getAddOnQuantity(add_ons_choice.id);
+        const AddOnQuantity = temp_cart.getTempAddOnQuantity(add_ons_choice.id);
 
         return (
           <div key={index} className={styles.extraaddonschoicesbox}>
@@ -50,7 +50,9 @@ export default function SelectExtraChoice(props) {
               </div>
               <div className={styles.extraaddonsaddbox}>
                 <button
-                  onClick={() => cart.removeAddOnFromCart(add_ons_choice.id)}
+                  onClick={() =>
+                    temp_cart.removeAddOnFromTempCart(add_ons_choice.id)
+                  }
                 >
                   <img
                     className={styles.minusicon}
@@ -61,10 +63,12 @@ export default function SelectExtraChoice(props) {
                 <div className={styles.backbtntext}>{AddOnQuantity}</div>
                 <button
                   onClick={() =>
-                    cart.addAddOnToCart(
+                    temp_cart.addAddOnToTempCart(
                       add_ons_choice.id,
+                      add_ons_choice.name,
                       add_ons_choice.price,
-                      add_ons_group.group_type
+                      add_ons_group.group_type,
+                      add_ons_group.menu_item
                     )
                   }
                 >

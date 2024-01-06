@@ -75,11 +75,7 @@ const ItemDetailsPage = async ({ params }) => {
         {menu_item.image == null ? (
           <img className={styles.itempicIcon} alt="" src="/default-pic.png" />
         ) : (
-          <img
-            className={styles.itempicIcon}
-            alt=""
-            src={process.env.NEXT_PUBLIC_HOST + menu_item.image}
-          />
+          <img className={styles.itempicIcon} alt="" src={menu_item.image} />
         )}
       </div>
       <Link href="../" className={styles.backbutton}>
@@ -168,7 +164,7 @@ const ItemDetailsPage = async ({ params }) => {
                   />
                 </div>
               );
-            } else {
+            } else if (add_ons_group.group_type == "Multi") {
               return (
                 <div key={index} className={styles.normaladdongroup}>
                   <div className={styles.divider} />
