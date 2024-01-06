@@ -20,14 +20,16 @@ export default function SelectNormalChoice(props) {
   });
 
   useEffect(() => {
-    temp_cart.addPreSelectedAddOnToTempCart(
-      pre_selected_choice.id,
-      pre_selected_choice.name,
-      pre_selected_choice.price,
-      add_ons_group.group_type,
-      add_ons_group.menu_item,
-      add_ons_group.id
-    );
+    if (pre_selected_choice) {
+      temp_cart.addPreSelectedAddOnToTempCart(
+        pre_selected_choice.id,
+        pre_selected_choice.name,
+        pre_selected_choice.price,
+        add_ons_group.group_type,
+        add_ons_group.menu_item,
+        add_ons_group.id
+      );
+    }
   }, []);
 
   const [selected_choice, setSelectedChoice] = useState(pre_selected_choice);
