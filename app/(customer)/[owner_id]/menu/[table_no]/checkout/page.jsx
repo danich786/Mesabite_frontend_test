@@ -155,7 +155,7 @@ const CheckoutPage = () => {
             })}
 
             <button
-              onClick={() => router.push("../../")}
+              onClick={() => router.push("./")}
               className={styles.additembtn}
             >
               <img
